@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16292E741EDA0DA80021BF11 /* ph-antisthenes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E651EDA0DA80021BF11 /* ph-antisthenes.jpg */; };
+		16292E751EDA0DA80021BF11 /* ph-aristotle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E661EDA0DA80021BF11 /* ph-aristotle.jpg */; };
+		16292E761EDA0DA80021BF11 /* ph-aurelius.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E671EDA0DA80021BF11 /* ph-aurelius.jpeg */; };
+		16292E771EDA0DA80021BF11 /* ph-camus.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E681EDA0DA80021BF11 /* ph-camus.jpeg */; };
+		16292E781EDA0DA80021BF11 /* ph-diogenes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E691EDA0DA80021BF11 /* ph-diogenes.jpg */; };
+		16292E791EDA0DA80021BF11 /* ph-epictetus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E6A1EDA0DA80021BF11 /* ph-epictetus.jpg */; };
+		16292E7A1EDA0DA80021BF11 /* ph-hobbes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E6B1EDA0DA80021BF11 /* ph-hobbes.jpeg */; };
+		16292E7B1EDA0DA80021BF11 /* ph-hume.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E6C1EDA0DA80021BF11 /* ph-hume.jpeg */; };
+		16292E7C1EDA0DA80021BF11 /* ph-nietzsche.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E6D1EDA0DA80021BF11 /* ph-nietzsche.jpeg */; };
+		16292E7D1EDA0DA80021BF11 /* ph-plato.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E6E1EDA0DA80021BF11 /* ph-plato.jpeg */; };
+		16292E7E1EDA0DA80021BF11 /* ph-rousseau.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E6F1EDA0DA80021BF11 /* ph-rousseau.jpeg */; };
+		16292E7F1EDA0DA80021BF11 /* ph-sartre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E701EDA0DA80021BF11 /* ph-sartre.jpg */; };
+		16292E801EDA0DA80021BF11 /* ph-schopenhauer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E711EDA0DA80021BF11 /* ph-schopenhauer.jpg */; };
+		16292E811EDA0DA80021BF11 /* ph-seneca.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E721EDA0DA80021BF11 /* ph-seneca.jpeg */; };
+		16292E821EDA0DA80021BF11 /* ph-socrates.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16292E731EDA0DA80021BF11 /* ph-socrates.jpg */; };
+		16292E841EDA11080021BF11 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16292E831EDA11080021BF11 /* DetailViewController.swift */; };
+		16C21ED31EDA0088008C59CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C21ED21EDA0088008C59CE /* AppDelegate.swift */; };
+		16C21ED51EDA0088008C59CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C21ED41EDA0088008C59CE /* ViewController.swift */; };
+		16C21ED81EDA0088008C59CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C21ED61EDA0088008C59CE /* Main.storyboard */; };
+		16C21EDA1EDA0088008C59CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C21ED91EDA0088008C59CE /* Assets.xcassets */; };
+		16C21EDD1EDA0088008C59CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C21EDB1EDA0088008C59CE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16292E651EDA0DA80021BF11 /* ph-antisthenes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-antisthenes.jpg"; sourceTree = "<group>"; };
+		16292E661EDA0DA80021BF11 /* ph-aristotle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-aristotle.jpg"; sourceTree = "<group>"; };
+		16292E671EDA0DA80021BF11 /* ph-aurelius.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-aurelius.jpeg"; sourceTree = "<group>"; };
+		16292E681EDA0DA80021BF11 /* ph-camus.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-camus.jpeg"; sourceTree = "<group>"; };
+		16292E691EDA0DA80021BF11 /* ph-diogenes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-diogenes.jpg"; sourceTree = "<group>"; };
+		16292E6A1EDA0DA80021BF11 /* ph-epictetus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-epictetus.jpg"; sourceTree = "<group>"; };
+		16292E6B1EDA0DA80021BF11 /* ph-hobbes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-hobbes.jpeg"; sourceTree = "<group>"; };
+		16292E6C1EDA0DA80021BF11 /* ph-hume.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-hume.jpeg"; sourceTree = "<group>"; };
+		16292E6D1EDA0DA80021BF11 /* ph-nietzsche.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-nietzsche.jpeg"; sourceTree = "<group>"; };
+		16292E6E1EDA0DA80021BF11 /* ph-plato.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-plato.jpeg"; sourceTree = "<group>"; };
+		16292E6F1EDA0DA80021BF11 /* ph-rousseau.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-rousseau.jpeg"; sourceTree = "<group>"; };
+		16292E701EDA0DA80021BF11 /* ph-sartre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-sartre.jpg"; sourceTree = "<group>"; };
+		16292E711EDA0DA80021BF11 /* ph-schopenhauer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-schopenhauer.jpg"; sourceTree = "<group>"; };
+		16292E721EDA0DA80021BF11 /* ph-seneca.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-seneca.jpeg"; sourceTree = "<group>"; };
+		16292E731EDA0DA80021BF11 /* ph-socrates.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ph-socrates.jpg"; sourceTree = "<group>"; };
+		16292E831EDA11080021BF11 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		16C21ECF1EDA0088008C59CE /* Experiment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Experiment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C21ED21EDA0088008C59CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16C21ED41EDA0088008C59CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16C21ED71EDA0088008C59CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16C21ED91EDA0088008C59CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16C21EDC1EDA0088008C59CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16C21EDE1EDA0088008C59CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C21ECC1EDA0088008C59CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C21EC61EDA0088008C59CE = {
+			isa = PBXGroup;
+			children = (
+				16C21ED11EDA0088008C59CE /* Experiment1 */,
+				16C21ED01EDA0088008C59CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16C21ED01EDA0088008C59CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C21ECF1EDA0088008C59CE /* Experiment1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16C21ED11EDA0088008C59CE /* Experiment1 */ = {
+			isa = PBXGroup;
+			children = (
+				16C21ED21EDA0088008C59CE /* AppDelegate.swift */,
+				16C21ED41EDA0088008C59CE /* ViewController.swift */,
+				16292E831EDA11080021BF11 /* DetailViewController.swift */,
+				16C21ED61EDA0088008C59CE /* Main.storyboard */,
+				16C21ED91EDA0088008C59CE /* Assets.xcassets */,
+				16292E651EDA0DA80021BF11 /* ph-antisthenes.jpg */,
+				16292E661EDA0DA80021BF11 /* ph-aristotle.jpg */,
+				16292E671EDA0DA80021BF11 /* ph-aurelius.jpeg */,
+				16292E681EDA0DA80021BF11 /* ph-camus.jpeg */,
+				16292E691EDA0DA80021BF11 /* ph-diogenes.jpg */,
+				16292E6A1EDA0DA80021BF11 /* ph-epictetus.jpg */,
+				16292E6B1EDA0DA80021BF11 /* ph-hobbes.jpeg */,
+				16292E6C1EDA0DA80021BF11 /* ph-hume.jpeg */,
+				16292E6D1EDA0DA80021BF11 /* ph-nietzsche.jpeg */,
+				16292E6E1EDA0DA80021BF11 /* ph-plato.jpeg */,
+				16292E6F1EDA0DA80021BF11 /* ph-rousseau.jpeg */,
+				16292E701EDA0DA80021BF11 /* ph-sartre.jpg */,
+				16292E711EDA0DA80021BF11 /* ph-schopenhauer.jpg */,
+				16292E721EDA0DA80021BF11 /* ph-seneca.jpeg */,
+				16292E731EDA0DA80021BF11 /* ph-socrates.jpg */,
+				16C21EDB1EDA0088008C59CE /* LaunchScreen.storyboard */,
+				16C21EDE1EDA0088008C59CE /* Info.plist */,
+			);
+			path = Experiment1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C21ECE1EDA0088008C59CE /* Experiment1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C21EE11EDA0088008C59CE /* Build configuration list for PBXNativeTarget "Experiment1" */;
+			buildPhases = (
+				16C21ECB1EDA0088008C59CE /* Sources */,
+				16C21ECC1EDA0088008C59CE /* Frameworks */,
+				16C21ECD1EDA0088008C59CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Experiment1;
+			productName = Experiment1;
+			productReference = 16C21ECF1EDA0088008C59CE /* Experiment1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C21EC71EDA0088008C59CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Dave's Organization";
+				TargetAttributes = {
+					16C21ECE1EDA0088008C59CE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HY3LPP8363;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 16C21ECA1EDA0088008C59CE /* Build configuration list for PBXProject "Experiment1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C21EC61EDA0088008C59CE;
+			productRefGroup = 16C21ED01EDA0088008C59CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C21ECE1EDA0088008C59CE /* Experiment1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C21ECD1EDA0088008C59CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16292E811EDA0DA80021BF11 /* ph-seneca.jpeg in Resources */,
+				16292E791EDA0DA80021BF11 /* ph-epictetus.jpg in Resources */,
+				16292E7B1EDA0DA80021BF11 /* ph-hume.jpeg in Resources */,
+				16292E7F1EDA0DA80021BF11 /* ph-sartre.jpg in Resources */,
+				16292E771EDA0DA80021BF11 /* ph-camus.jpeg in Resources */,
+				16292E781EDA0DA80021BF11 /* ph-diogenes.jpg in Resources */,
+				16292E741EDA0DA80021BF11 /* ph-antisthenes.jpg in Resources */,
+				16292E761EDA0DA80021BF11 /* ph-aurelius.jpeg in Resources */,
+				16C21EDD1EDA0088008C59CE /* LaunchScreen.storyboard in Resources */,
+				16292E7A1EDA0DA80021BF11 /* ph-hobbes.jpeg in Resources */,
+				16C21EDA1EDA0088008C59CE /* Assets.xcassets in Resources */,
+				16292E751EDA0DA80021BF11 /* ph-aristotle.jpg in Resources */,
+				16292E7D1EDA0DA80021BF11 /* ph-plato.jpeg in Resources */,
+				16292E801EDA0DA80021BF11 /* ph-schopenhauer.jpg in Resources */,
+				16C21ED81EDA0088008C59CE /* Main.storyboard in Resources */,
+				16292E821EDA0DA80021BF11 /* ph-socrates.jpg in Resources */,
+				16292E7E1EDA0DA80021BF11 /* ph-rousseau.jpeg in Resources */,
+				16292E7C1EDA0DA80021BF11 /* ph-nietzsche.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C21ECB1EDA0088008C59CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16292E841EDA11080021BF11 /* DetailViewController.swift in Sources */,
+				16C21ED51EDA0088008C59CE /* ViewController.swift in Sources */,
+				16C21ED31EDA0088008C59CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16C21ED61EDA0088008C59CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C21ED71EDA0088008C59CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16C21EDB1EDA0088008C59CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C21EDC1EDA0088008C59CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16C21EDF1EDA0088008C59CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16C21EE01EDA0088008C59CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16C21EE21EDA0088008C59CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HY3LPP8363;
+				INFOPLIST_FILE = Experiment1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gumbad.Experiment1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		16C21EE31EDA0088008C59CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HY3LPP8363;
+				INFOPLIST_FILE = Experiment1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gumbad.Experiment1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C21ECA1EDA0088008C59CE /* Build configuration list for PBXProject "Experiment1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C21EDF1EDA0088008C59CE /* Debug */,
+				16C21EE01EDA0088008C59CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C21EE11EDA0088008C59CE /* Build configuration list for PBXNativeTarget "Experiment1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C21EE21EDA0088008C59CE /* Debug */,
+				16C21EE31EDA0088008C59CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C21EC71EDA0088008C59CE /* Project object */;
+}
