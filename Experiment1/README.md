@@ -1,5 +1,7 @@
 # Experiment 1 - Philosopher's Table
 
+NOTE: Learn how to make GIFs. Screenshots are lame.
+
 Practiced with:
 - UITableView
 - ImageView
