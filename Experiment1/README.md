@@ -9,12 +9,19 @@ Practiced with:
 - SLComposeViewController
 - FileManager
 
-Table of philosophers:
+### Table of philosophers: 
+
 ![Imgur](http://i.imgur.com/PoOE4pX.jpg)
-Choose Camus:
+
+### Choose Camus:
+
 ![Imgur](http://i.imgur.com/RfoHgSu.jpg)
-Share on Twitter to seem sophisticated to your followers:
+
+### Share on Twitter to seem sophisticated to your followers:
+
 ![Imgur](http://i.imgur.com/g8btfyM.jpg)
-Yay!
+
+### Yay!
+
 ![Imgur](http://i.imgur.com/KKwWcfV.jpg)
 
