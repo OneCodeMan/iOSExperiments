@@ -6,11 +6,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var selectedImage: String?
+    var selectedImageName: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = selectedImage
+        title = selectedImageName
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
 
@@ -31,9 +32,8 @@ class DetailViewController: UIViewController {
 
     func shareTapped() {
         if let vc = SLComposeViewController(forServiceType: SLServiceTypeTwitter) {
-            vc.setInitialText("Sick philosopher yo!")
+            vc.setInitialText("\(selectedImageName!)")
             vc.add(imageView.image!)
-            vc.add(URL(string: "https://google.ca"))
             present(vc, animated: true)
         }
     }
