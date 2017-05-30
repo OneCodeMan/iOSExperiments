@@ -13,6 +13,11 @@
 		16292ED71EDA9C550021BF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16292ED61EDA9C550021BF11 /* Assets.xcassets */; };
 		16292EDA1EDA9C550021BF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16292ED81EDA9C550021BF11 /* LaunchScreen.storyboard */; };
 		16C0251D1EDB4944001A1180 /* GhibliModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0251C1EDB4944001A1180 /* GhibliModel.swift */; };
+		16C025291EDD171F001A1180 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C025281EDD171F001A1180 /* Film.swift */; };
+		16C0252B1EDD177C001A1180 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0252A1EDD177C001A1180 /* People.swift */; };
+		16C0252D1EDD17A6001A1180 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0252C1EDD17A6001A1180 /* Location.swift */; };
+		16C0252F1EDD17E6001A1180 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0252E1EDD17E6001A1180 /* Species.swift */; };
+		16C025311EDD181E001A1180 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C025301EDD181E001A1180 /* Vehicle.swift */; };
 		4BFADDC74A79D9B69E4C5043 /* Pods_Experiment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A015DE4F982CFDC70328B585 /* Pods_Experiment2.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,11 @@
 		16292ED91EDA9C550021BF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16292EDB1EDA9C550021BF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16C0251C1EDB4944001A1180 /* GhibliModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GhibliModel.swift; sourceTree = "<group>"; };
+		16C025281EDD171F001A1180 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		16C0252A1EDD177C001A1180 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		16C0252C1EDD17A6001A1180 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		16C0252E1EDD17E6001A1180 /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		16C025301EDD181E001A1180 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		A015DE4F982CFDC70328B585 /* Pods_Experiment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experiment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB10750E4529CDEFAFA8FDD0 /* Pods-Experiment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiment2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Experiment2/Pods-Experiment2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +80,11 @@
 				16292ED61EDA9C550021BF11 /* Assets.xcassets */,
 				16292ED81EDA9C550021BF11 /* LaunchScreen.storyboard */,
 				16292EDB1EDA9C550021BF11 /* Info.plist */,
+				16C025281EDD171F001A1180 /* Film.swift */,
+				16C0252A1EDD177C001A1180 /* People.swift */,
+				16C0252C1EDD17A6001A1180 /* Location.swift */,
+				16C0252E1EDD17E6001A1180 /* Species.swift */,
+				16C025301EDD181E001A1180 /* Vehicle.swift */,
 			);
 			path = Experiment2;
 			sourceTree = "<group>";
@@ -215,9 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C025311EDD181E001A1180 /* Vehicle.swift in Sources */,
 				16292ED21EDA9C550021BF11 /* ViewController.swift in Sources */,
+				16C0252F1EDD17E6001A1180 /* Species.swift in Sources */,
+				16C025291EDD171F001A1180 /* Film.swift in Sources */,
 				16292ED01EDA9C550021BF11 /* AppDelegate.swift in Sources */,
 				16C0251D1EDB4944001A1180 /* GhibliModel.swift in Sources */,
+				16C0252D1EDD17A6001A1180 /* Location.swift in Sources */,
+				16C0252B1EDD177C001A1180 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

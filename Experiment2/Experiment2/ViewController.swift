@@ -8,7 +8,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ghibli.downloadData {
+        ghibli.getFilms {
+            self.updateConsole()
+        }
+        
+        ghibli.getPeople {
             self.updateConsole()
         }
        
