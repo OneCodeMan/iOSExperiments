@@ -16,7 +16,6 @@ class GhibliModel {
     let speciesUrl = URL(string: "https://ghibliapi.herokuapp.com/species")!
     let vehicleUrl = URL(string: "https://ghibliapi.herokuapp.com/vehicles")!
     
-    
     func getFilms(completed: @escaping () -> ()) {
         
         Alamofire.request(filmUrl).responseJSON(completionHandler: {
