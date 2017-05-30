@@ -7,7 +7,7 @@ struct Film {
     var description: String
     var director: String
     var producer: String
-    var release_date: String
-    var rt_score: String
+    var releaseDate: String
+    var rtScore: String
     
 }
