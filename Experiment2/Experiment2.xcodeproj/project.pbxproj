@@ -18,6 +18,11 @@
 		16C0252D1EDD17A6001A1180 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0252C1EDD17A6001A1180 /* Location.swift */; };
 		16C0252F1EDD17E6001A1180 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0252E1EDD17E6001A1180 /* Species.swift */; };
 		16C025311EDD181E001A1180 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C025301EDD181E001A1180 /* Vehicle.swift */; };
+		16C025331EDE43FF001A1180 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C025321EDE43FF001A1180 /* FilmsViewController.swift */; };
+		16C025351EDE529D001A1180 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C025341EDE529D001A1180 /* PeopleViewController.swift */; };
+		16C025371EDE5323001A1180 /* SpeciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C025361EDE5323001A1180 /* SpeciesViewController.swift */; };
+		16C025391EDE5371001A1180 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C025381EDE5371001A1180 /* LocationsViewController.swift */; };
+		16C0253B1EDE53BE001A1180 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0253A1EDE53BE001A1180 /* VehiclesViewController.swift */; };
 		4BFADDC74A79D9B69E4C5043 /* Pods_Experiment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A015DE4F982CFDC70328B585 /* Pods_Experiment2.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +41,11 @@
 		16C0252C1EDD17A6001A1180 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		16C0252E1EDD17E6001A1180 /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
 		16C025301EDD181E001A1180 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		16C025321EDE43FF001A1180 /* FilmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
+		16C025341EDE529D001A1180 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		16C025361EDE5323001A1180 /* SpeciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeciesViewController.swift; sourceTree = "<group>"; };
+		16C025381EDE5371001A1180 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		16C0253A1EDE53BE001A1180 /* VehiclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
 		A015DE4F982CFDC70328B585 /* Pods_Experiment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experiment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB10750E4529CDEFAFA8FDD0 /* Pods-Experiment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiment2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Experiment2/Pods-Experiment2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +87,11 @@
 				16292ED11EDA9C550021BF11 /* ViewController.swift */,
 				16C0251C1EDB4944001A1180 /* GhibliModel.swift */,
 				16292ED31EDA9C550021BF11 /* Main.storyboard */,
+				16C025321EDE43FF001A1180 /* FilmsViewController.swift */,
+				16C025341EDE529D001A1180 /* PeopleViewController.swift */,
+				16C025361EDE5323001A1180 /* SpeciesViewController.swift */,
+				16C025381EDE5371001A1180 /* LocationsViewController.swift */,
+				16C0253A1EDE53BE001A1180 /* VehiclesViewController.swift */,
 				16292ED61EDA9C550021BF11 /* Assets.xcassets */,
 				16292ED81EDA9C550021BF11 /* LaunchScreen.storyboard */,
 				16292EDB1EDA9C550021BF11 /* Info.plist */,
@@ -232,12 +247,17 @@
 			files = (
 				16C025311EDD181E001A1180 /* Vehicle.swift in Sources */,
 				16292ED21EDA9C550021BF11 /* ViewController.swift in Sources */,
+				16C025371EDE5323001A1180 /* SpeciesViewController.swift in Sources */,
+				16C0253B1EDE53BE001A1180 /* VehiclesViewController.swift in Sources */,
 				16C0252F1EDD17E6001A1180 /* Species.swift in Sources */,
 				16C025291EDD171F001A1180 /* Film.swift in Sources */,
 				16292ED01EDA9C550021BF11 /* AppDelegate.swift in Sources */,
+				16C025351EDE529D001A1180 /* PeopleViewController.swift in Sources */,
 				16C0251D1EDB4944001A1180 /* GhibliModel.swift in Sources */,
+				16C025331EDE43FF001A1180 /* FilmsViewController.swift in Sources */,
 				16C0252D1EDD17A6001A1180 /* Location.swift in Sources */,
 				16C0252B1EDD177C001A1180 /* People.swift in Sources */,
+				16C025391EDE5371001A1180 /* LocationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

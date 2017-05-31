@@ -2,19 +2,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var ghibli = GhibliModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        ghibli.getFilms {
-            self.updateConsole()
-        }
-        
-        ghibli.getPeople {
-            self.updateConsole()
-        }
        
     }
     

@@ -175,7 +175,7 @@
         <!--FilmsView-->
         <scene sceneID="n0O-gm-1HV">
             <objects>
-                <viewController title="FilmsView" id="G0F-0Y-C7R" sceneMemberID="viewController">
+                <viewController title="FilmsView" id="G0F-0Y-C7R" customClass="FilmsViewController" customModule="Experiment2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gxH-1A-Gp4"/>
                         <viewControllerLayoutGuide type="bottom" id="Hvy-6l-7GX"/>
