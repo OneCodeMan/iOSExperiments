@@ -22,20 +22,24 @@ class GhibliModel {
             response in
             let result = response.result
             
-            let filmData = result.value! as? [[String:Any]]
+            if let filmData = result.value! as? [[String:Any]] {
             
-            for data in filmData! {
-                let title = data["title"]! as? String
-                let description = data["description"]! as? String
-                let rtScore = data["rt_score"]! as? String
-                let director = data["director"]! as? String
-                let producer = data["producer"]! as? String
-                let releaseDate = data["release_date"]! as? String
+                for data in filmData {
+                    let title = data["title"]! as? String
+                    let description = data["description"]! as? String
+                    let rtScore = data["rt_score"]! as? String
+                    let director = data["director"]! as? String
+                    let producer = data["producer"]! as? String
+                    let releaseDate = data["release_date"]! as? String
                 
-                let filmInstance = Film(title: title!, description: description!, director: director!, producer: producer!, releaseDate: releaseDate!, rtScore: rtScore!)
+                    let filmInstance = Film(title: title!, description: description!, director: director!, producer: producer!, releaseDate: releaseDate!, rtScore: rtScore!)
                 
-                self.films.append(filmInstance)
+                    self.films.append(filmInstance)
                 
+                }
+                
+            } else {
+                print("bruh films ain't working")
             }
             
 
@@ -49,20 +53,21 @@ class GhibliModel {
             response in
             let result = response.result
             
-            let peopleData = result.value! as? [[String:Any]]
+            if let peopleData = result.value! as? [[String:Any]] {
             
-            for data in peopleData! {
+                for data in peopleData {
                 
-                let name = data["name"]! as? String
-                let gender = data["gender"]! as? String
-                let age = data["age"]! as? String
-                let eyeColor = data["eye_color"]! as? String
-                let hairColor = data["hair_color"]! as? String
+                    let name = data["name"]! as? String
+                    let gender = data["gender"]! as? String
+                    let age = data["age"]! as? String
+                    let eyeColor = data["eye_color"]! as? String
+                    let hairColor = data["hair_color"]! as? String
               
-                let personInstance = People(name: name!, gender: gender!, age: age!, eyeColor: eyeColor!, hairColor: hairColor!)
+                    let personInstance = People(name: name!, gender: gender!, age: age!, eyeColor: eyeColor!, hairColor: hairColor!)
                 
-                self.people.append(personInstance)
+                    self.people.append(personInstance)
                 
+                }
             }
 
             
@@ -76,19 +81,22 @@ class GhibliModel {
             response in
             let result = response.result
             
-            let locationData = result.value! as? [[String:Any]]
+            if let locationData = result.value! as? [[String:Any]] {
             
-            for data in locationData! {
+                for data in locationData {
                 
-                let name = data["name"]! as? String
-                let climate = data["climate"]! as? String
-                let terrain = data["terrain"]! as? String
-                let surfaceWater = data["surfaceWater"]! as? String
+                    let name = data["name"]! as? String
+                    let climate = data["climate"]! as? String
+                    let terrain = data["terrain"]! as? String
+                    let surfaceWater = data["surfaceWater"]! as? String
                 
-                let locationInstance = Location(name: name!, climate: climate!, terrain: terrain!, surfaceWater: surfaceWater!)
+                    let locationInstance = Location(name: name!, climate: climate!, terrain: terrain!, surfaceWater: surfaceWater!)
                 
-                self.locations.append(locationInstance)
+                    self.locations.append(locationInstance)
                 
+                }
+            } else {
+                print("Locations upload didn't work")
             }
             
             
@@ -102,19 +110,22 @@ class GhibliModel {
             response in
             let result = response.result
             
-            let speciesData = result.value! as? [[String:Any]]
+            if let speciesData = result.value! as? [[String:Any]] {
             
-            for data in speciesData! {
+                for data in speciesData {
                 
-                let name = data["name"]! as? String
-                let classification = data["classification"]! as? String
-                let eyeColors = data["eye_colors"]! as? String
-                let hairColors = data["hair_colors"]! as? String
+                    let name = data["name"]! as? String
+                    let classification = data["classification"]! as? String
+                    let eyeColors = data["eye_colors"]! as? String
+                    let hairColors = data["hair_colors"]! as? String
                 
-                let speciesInstance = Species(name: name!, classification: classification!, eyeColors: eyeColors!, hairColors: hairColors!)
+                    let speciesInstance = Species(name: name!, classification: classification!, eyeColors: eyeColors!, hairColors: hairColors!)
                 
-                self.species.append(speciesInstance)
+                    self.species.append(speciesInstance)
                 
+                }
+            } else {
+                print("bruhhhh something is wrong with species")
             }
             
             
@@ -128,19 +139,22 @@ class GhibliModel {
             response in
             let result = response.result
             
-            let vehicleData = result.value! as? [[String:Any]]
+            if let vehicleData = result.value! as? [[String:Any]] {
             
-            for data in vehicleData! {
+                for data in vehicleData {
                 
-                let name = data["name"]! as? String
-                let description = data["description"] as? String
-                let vehicleClass = data["vehicle_class"] as? String
-                let length = data["length"]! as? String
+                    let name = data["name"]! as? String
+                    let description = data["description"] as? String
+                    let vehicleClass = data["vehicle_class"] as? String
+                    let length = data["length"]! as? String
                 
-                let vehicleInstance = Vehicle(name: name!, description: description!, vehicleClass: vehicleClass!, length: length!)
+                    let vehicleInstance = Vehicle(name: name!, description: description!, vehicleClass:     vehicleClass!, length: length!)
                 
-                self.vehicles.append(vehicleInstance)
+                    self.vehicles.append(vehicleInstance)
                 
+                }
+            } else {
+                print("vehicles error")
             }
             
             
