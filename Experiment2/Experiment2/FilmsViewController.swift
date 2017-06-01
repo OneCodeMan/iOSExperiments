@@ -1,36 +1,34 @@
 
 import UIKit
 
-class FilmsViewController: UIViewController {
+class FilmsViewController: UITableViewController {
     
     let filmController = GhibliModel()
+    var films = [Film]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        filmController.getFilms {
-            
-            for film in self.filmController.films {
-                // display on UI
-            }
-            
-        }
+        title = "Films"
+        
     }
-
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return films.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Film", for: indexPath)
+        
+        cell.textLabel?.text = films[indexPath.row].title
+        
+        return cell
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
