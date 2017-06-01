@@ -1,21 +1,29 @@
 
 import UIKit
 
-class LocationsViewController: UIViewController {
+class LocationsViewController: UITableViewController {
     
-    let locationController = GhibliModel()
+    var locations = [Location]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        locationController.getLocation {
-            
-            for location in self.locationController.locations {
-                // display on UI
-            }
-        }
+        
+        title = "Locations"
         
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return locations.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Location", for: indexPath)
+        
+        cell.textLabel?.text = locations[indexPath.row].name
+        
+        return cell
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

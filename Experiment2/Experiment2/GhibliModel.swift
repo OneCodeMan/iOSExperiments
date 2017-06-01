@@ -75,7 +75,7 @@ class GhibliModel {
         })
     }
     
-    func getLocation(completed: @escaping () -> ()) {
+    func getLocations(completed: @escaping () -> ()) {
         
         Alamofire.request(locationUrl).responseJSON(completionHandler: {
             response in
@@ -88,7 +88,7 @@ class GhibliModel {
                     let name = data["name"]! as? String
                     let climate = data["climate"]! as? String
                     let terrain = data["terrain"]! as? String
-                    let surfaceWater = data["surfaceWater"]! as? String
+                    let surfaceWater = data["surface_water"]! as? String
                 
                     let locationInstance = Location(name: name!, climate: climate!, terrain: terrain!, surfaceWater: surfaceWater!)
                 

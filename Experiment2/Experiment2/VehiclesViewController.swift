@@ -1,36 +1,33 @@
 
 import UIKit
 
-class VehiclesViewController: UIViewController {
+class VehiclesViewController: UITableViewController {
     
-    let vehicleController = GhibliModel()
+    var vehicles = [Vehicle]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        vehicleController.getVehicles {
-            
-            for vehicle in self.vehicleController.vehicles {
-                // display on UI
-            }
-            
-        }
+        
+        title = "Vehicles"
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return vehicles.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Vehicle", for: indexPath)
+        
+        cell.textLabel?.text = vehicles[indexPath.row].name
+        
+        return cell
+    }
+
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

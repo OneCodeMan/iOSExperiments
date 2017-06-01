@@ -1,37 +1,33 @@
 
 import UIKit
 
-class SpeciesViewController: UIViewController {
+class SpeciesViewController: UITableViewController {
     
-    let speciesController = GhibliModel()
+    var species = [Species]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        speciesController.getSpecies {
-            
-            for species in self.speciesController.species {
-                // display on UI
-            }
-            
-        }
+        
+        title = "Species"
         
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return species.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Species", for: indexPath)
+        
+        cell.textLabel?.text = species[indexPath.row].classification
+        
+        return cell
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

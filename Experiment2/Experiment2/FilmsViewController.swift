@@ -3,7 +3,6 @@ import UIKit
 
 class FilmsViewController: UITableViewController {
     
-    let filmController = GhibliModel()
     var films = [Film]()
 
     override func viewDidLoad() {

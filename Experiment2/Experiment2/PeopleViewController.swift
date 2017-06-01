@@ -1,21 +1,31 @@
 
 import UIKit
 
-class PeopleViewController: UIViewController {
+class PeopleViewController: UITableViewController {
     
-    let peopleController = GhibliModel()
+    var people = [People]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "People"
 
-        peopleController.getPeople {
-            
-            for person in self.peopleController.people {
-                // display on UI
-            }
-            
-        }
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return people.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Person", for: indexPath)
+        
+        cell.textLabel?.text = people[indexPath.row].name
+        
+        return cell
+    }
+
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
