@@ -7,6 +7,8 @@ class ViewController: UIViewController {
     
     @IBAction func filmsButton(_ sender: UIButton) {
         
+        print("Films button pressed!")
+        
         gm.getFilms {
             
             let filmsVC = self.storyboard?.instantiateViewController(withIdentifier: "Films") as! FilmsViewController

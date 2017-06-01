@@ -24,6 +24,11 @@ class SpeciesViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "SpeciesDetail") as? SpeciesDetailViewController {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

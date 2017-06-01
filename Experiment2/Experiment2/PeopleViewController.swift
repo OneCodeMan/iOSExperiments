@@ -24,9 +24,12 @@ class PeopleViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "PeopleDetail") as? PeopleDetailViewController {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
