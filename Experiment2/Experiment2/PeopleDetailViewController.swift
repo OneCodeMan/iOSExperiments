@@ -2,6 +2,12 @@
 import UIKit
 
 class PeopleDetailViewController: UIViewController {
+    
+    var name: String?
+    var gender: String?
+    var age: String?
+    var eyeColor: String?
+    var hairColor: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()

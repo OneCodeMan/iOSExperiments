@@ -4,6 +4,7 @@ import UIKit
 class VehiclesViewController: UITableViewController {
     
     var vehicles = [Vehicle]()
+    let numVehicles = 3
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,7 +13,7 @@ class VehiclesViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vehicles.count
+        return numVehicles
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,8 +26,16 @@ class VehiclesViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "VehicleDetail") as? VehiclesDetailViewController {
+            vc.name = vehicles[indexPath.row].name
+            vc.vehicleDescription = vehicles[indexPath.row].description
+            vc.vehicleClass = vehicles[indexPath.row].vehicleClass
+            vc.length = vehicles[indexPath.row].length
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
     }
     
     override func didReceiveMemoryWarning() {

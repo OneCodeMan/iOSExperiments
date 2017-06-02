@@ -1,14 +1,12 @@
-//
-//  LocationsDetailViewController.swift
-//  Experiment2
-//
-//  Created by Dave Gumba on 2017-06-01.
-//  Copyright © 2017 Dave's Organization. All rights reserved.
-//
 
 import UIKit
 
 class LocationsDetailViewController: UIViewController {
+    
+    var name: String?
+    var climate: String?
+    var terrain: String?
+    var surfaceWater: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()

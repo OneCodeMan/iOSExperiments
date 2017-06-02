@@ -2,6 +2,11 @@
 import UIKit
 
 class SpeciesDetailViewController: UIViewController {
+    
+    var name: String?
+    var classification: String?
+    var eyeColors: String?
+    var hairColors: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -4,6 +4,7 @@ import UIKit
 class FilmsViewController: UITableViewController {
     
     var films = [Film]()
+    let numFilms = 20 // bad workaroud
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,7 +14,7 @@ class FilmsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return films.count
+        return numFilms
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -26,6 +27,11 @@ class FilmsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "FilmDetail") as? FilmDetailViewController {
+            vc.filmTitle = films[indexPath.row].title
+            vc.director = films[indexPath.row].director
+            vc.producer = films[indexPath.row].producer
+            vc.releaseDate = films[indexPath.row].releaseDate
+            vc.rtScore = films[indexPath.row].rtScore
             navigationController?.pushViewController(vc, animated: true)
         }
     }

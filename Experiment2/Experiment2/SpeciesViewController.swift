@@ -4,7 +4,8 @@ import UIKit
 class SpeciesViewController: UITableViewController {
     
     var species = [Species]()
-
+    let numSpecies = 6
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -13,7 +14,7 @@ class SpeciesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return species.count
+        return numSpecies
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -26,6 +27,10 @@ class SpeciesViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "SpeciesDetail") as? SpeciesDetailViewController {
+            vc.name = species[indexPath.row].name
+            vc.classification = species[indexPath.row].classification
+            vc.eyeColors = species[indexPath.row].eyeColors
+            vc.hairColors = species[indexPath.row].hairColors
             navigationController?.pushViewController(vc, animated: true)
         }
     }

@@ -16,10 +16,13 @@ class ViewController: UIViewController {
             self.navigationController?.pushViewController(filmsVC, animated: true)
             
         }
+
         
     }
     
     @IBAction func peopleButton(_ sender: UIButton) {
+        
+        print("People button pressed")
         
         gm.getPeople {
             
@@ -33,6 +36,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func locationsButton(_ sender: UIButton) {
+        
         print("Locations button pressed!")
         
         gm.getLocations {
@@ -48,6 +52,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func speciesButton(_ sender: UIButton) {
+    
+        print("Species button pressed!")
         
         gm.getSpecies {
             
@@ -62,6 +68,8 @@ class ViewController: UIViewController {
     
     @IBAction func vehiclesButton(_ sender: UIButton) {
         
+        print("Vehicles button pressed!")
+        
         gm.getVehicles {
             
             let vehiclesVC = self.storyboard?.instantiateViewController(withIdentifier: "Vehicles") as! VehiclesViewController
@@ -75,8 +83,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
         
     }
     
