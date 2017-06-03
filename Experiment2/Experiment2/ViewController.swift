@@ -5,6 +5,19 @@ class ViewController: UIViewController {
     
     let gm = GhibliModel()
     
+    @IBAction func shrinkButton(_ sender: UIButton) {
+        print("shrink")
+        UIView.animate(withDuration: 0.2,
+                       animations: {
+                sender.transform = CGAffineTransform(scaleX: 0.01, y: 1)
+        },
+            completion: { _ in
+                UIView.animate(withDuration: 0.5) {
+                    sender.transform = CGAffineTransform.identity
+                }
+        })
+    }
+    
     @IBAction func filmsButton(_ sender: UIButton) {
         
         print("Films button pressed!")

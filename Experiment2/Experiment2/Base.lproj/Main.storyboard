@@ -52,6 +52,7 @@
                                                 </variation>
                                                 <connections>
                                                     <action selector="filmsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g90-10-mzs"/>
+                                                    <action selector="shrinkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tLI-df-knV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MM-Pw-AHt">
@@ -78,6 +79,7 @@
                                                 </variation>
                                                 <connections>
                                                     <action selector="peopleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Cx-wI-yip"/>
+                                                    <action selector="shrinkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubW-QK-vwG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-Ev-g6l">
@@ -104,6 +106,7 @@
                                                 </variation>
                                                 <connections>
                                                     <action selector="locationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1a-Pr-Dmv"/>
+                                                    <action selector="shrinkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQn-Qy-xJz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7V-jC-3Qx">
@@ -129,6 +132,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
+                                                    <action selector="shrinkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MxC-M5-JBB"/>
                                                     <action selector="speciesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JF2-Nf-DVl"/>
                                                 </connections>
                                             </button>
@@ -155,6 +159,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
+                                                    <action selector="shrinkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fuh-st-JXA"/>
                                                     <action selector="vehiclesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkr-eF-Lti"/>
                                                 </connections>
                                             </button>
