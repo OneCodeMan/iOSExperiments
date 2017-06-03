@@ -21,3 +21,4 @@ https://ghibliapi.herokuapp.com/
 - Sometimes the UINavigationBar does not appear when on a table view
 - Style up DetailView (and add a title)
 - Choose a better color palette and font
+- On Landscape, the 'Films' button is cut off on the top
