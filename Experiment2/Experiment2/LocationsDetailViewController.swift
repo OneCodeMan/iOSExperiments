@@ -7,11 +7,34 @@ class LocationsDetailViewController: UIViewController {
     var climate: String?
     var terrain: String?
     var surfaceWater: String?
+    
+    @IBOutlet weak var terrainLabel: UILabel!
+    
+    @IBOutlet weak var surfaceWaterLabel: UILabel!
+    
+    @IBOutlet weak var climateLabel: UILabel!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        nameLabel?.text = name!
+        terrainLabel?.text = terrain!
+        climateLabel?.text = climate!
+        surfaceWaterLabel?.text = surfaceWater!
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnTap = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.hidesBarsOnTap = false
     }
 
     override func didReceiveMemoryWarning() {

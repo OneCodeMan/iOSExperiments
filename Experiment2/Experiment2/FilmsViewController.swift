@@ -28,6 +28,7 @@ class FilmsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "FilmDetail") as? FilmDetailViewController {
             vc.filmTitle = films[indexPath.row].title
+            vc.filmDescription = films[indexPath.row].description
             vc.director = films[indexPath.row].director
             vc.producer = films[indexPath.row].producer
             vc.releaseDate = films[indexPath.row].releaseDate
