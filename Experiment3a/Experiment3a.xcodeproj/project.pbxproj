@@ -12,6 +12,7 @@
 		16FCA80E1EEA27BF00AF189D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FCA80C1EEA27BF00AF189D /* Main.storyboard */; };
 		16FCA8101EEA27BF00AF189D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FCA80F1EEA27BF00AF189D /* Assets.xcassets */; };
 		16FCA8131EEA27BF00AF189D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FCA8111EEA27BF00AF189D /* LaunchScreen.storyboard */; };
+		16FCA81B1EEB7B9200AF189D /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA81A1EEB7B9200AF189D /* customButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		16FCA80F1EEA27BF00AF189D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16FCA8121EEA27BF00AF189D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16FCA8141EEA27BF00AF189D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FCA81A1EEB7B9200AF189D /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				16FCA8081EEA27BF00AF189D /* AppDelegate.swift */,
 				16FCA80A1EEA27BF00AF189D /* ViewController.swift */,
 				16FCA80C1EEA27BF00AF189D /* Main.storyboard */,
+				16FCA81A1EEB7B9200AF189D /* customButton.swift */,
 				16FCA80F1EEA27BF00AF189D /* Assets.xcassets */,
 				16FCA8111EEA27BF00AF189D /* LaunchScreen.storyboard */,
 				16FCA8141EEA27BF00AF189D /* Info.plist */,
@@ -96,7 +99,7 @@
 				TargetAttributes = {
 					16FCA8041EEA27BF00AF189D = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = HY3LPP8363;
+						DevelopmentTeam = 6F6J9E4SZ2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,6 +142,7 @@
 			files = (
 				16FCA80B1EEA27BF00AF189D /* ViewController.swift in Sources */,
 				16FCA8091EEA27BF00AF189D /* AppDelegate.swift in Sources */,
+				16FCA81B1EEB7B9200AF189D /* customButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HY3LPP8363;
+				DEVELOPMENT_TEAM = 6F6J9E4SZ2;
 				INFOPLIST_FILE = Experiment3a/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gumbad.Experiment3a;
@@ -276,7 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HY3LPP8363;
+				DEVELOPMENT_TEAM = 6F6J9E4SZ2;
 				INFOPLIST_FILE = Experiment3a/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gumbad.Experiment3a;
@@ -304,6 +308,7 @@
 				16FCA8191EEA27BF00AF189D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

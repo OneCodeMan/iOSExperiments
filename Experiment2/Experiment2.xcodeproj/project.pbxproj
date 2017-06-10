@@ -171,7 +171,7 @@
 				TargetAttributes = {
 					16292ECB1EDA9C550021BF11 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = HY3LPP8363;
+						DevelopmentTeam = 6F6J9E4SZ2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -401,7 +401,7 @@
 			baseConfigurationReference = 1256BE46D4A37C536C6DF653 /* Pods-Experiment2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HY3LPP8363;
+				DEVELOPMENT_TEAM = 6F6J9E4SZ2;
 				INFOPLIST_FILE = Experiment2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gumbad.Experiment2;
@@ -415,7 +415,7 @@
 			baseConfigurationReference = CB10750E4529CDEFAFA8FDD0 /* Pods-Experiment2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HY3LPP8363;
+				DEVELOPMENT_TEAM = 6F6J9E4SZ2;
 				INFOPLIST_FILE = Experiment2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gumbad.Experiment2;

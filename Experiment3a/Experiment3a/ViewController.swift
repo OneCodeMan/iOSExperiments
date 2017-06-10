@@ -10,6 +10,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mainLabel: UILabel!
     
+    @IBOutlet weak var mainButton: UIButton!
+    
     @IBAction func mainButton(_ sender: UIButton) {
         
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5,
@@ -17,17 +19,18 @@ class ViewController: UIViewController {
                        animations: {
                         
                         self.boulder.transform = CGAffineTransform(translationX: CGFloat(self.currRollX), y: CGFloat(-self.currRollY))
-                        print(self.currRollX)
-        }) {
-            [unowned self] (finished: Bool) in
-            print("finished")
-        }
+                    })
         
         currRollX += 10
         currRollY += 15
         
         if currRollX >= 230 {
             currRollX = 0
+            mainLabel.text! = "Down"
+            mainButton.setTitle("Down", for: .normal)
+        } else {
+            mainButton.setTitle("Up", for: .normal)
+            mainLabel.text! = "Up"
         }
         
         if currRollY >= 345 {
