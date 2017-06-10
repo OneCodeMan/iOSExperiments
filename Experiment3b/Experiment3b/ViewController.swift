@@ -5,6 +5,7 @@ class ViewController: UICollectionViewController {
     let heroList = [#imageLiteral(resourceName: "hero-ww"), #imageLiteral(resourceName: "hero-socrates"), #imageLiteral(resourceName: "hero-yuno"), #imageLiteral(resourceName: "hero-batman"), #imageLiteral(resourceName: "hero-camus"),
                     #imageLiteral(resourceName: "hero-gintoki"), #imageLiteral(resourceName: "hero-diogenes"), #imageLiteral(resourceName: "hero-daredevil"), #imageLiteral(resourceName: "hero-saitama"),
                     #imageLiteral(resourceName: "hero-erza")]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,6 @@ class ViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let hero = heroList[indexPath.item]
         
-        print(hero)
     }
 
     override func didReceiveMemoryWarning() {
