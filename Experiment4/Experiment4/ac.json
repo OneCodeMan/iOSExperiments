@@ -1,0 +1,267 @@
+[
+  {
+    "id" : 1,
+    "name": "Agent S",
+    "personality": "Peppy",
+    "species": "Squirrel",
+    "birthday": "July 2",
+    "catchphrase": "sidekick"
+  },
+  {
+    "id" : 2,
+    "name": "Agnes",
+    "personality": "Uchi",
+    "species": "Pig",
+    "birthday": "April 21",
+    "catchphrase": "snuffle"
+  },
+  {
+    "id" : 3,
+    "name": "Rosie",
+    "personality": "Peppy",
+    "species": "Cat",
+    "birthday": "February 27",
+    "catchphrase": "silly"
+  },
+  {
+    "id" : 4,
+    "name": "Rowan",
+    "personality": "Jock",
+    "species": "Tiger",
+    "birthday": "August 26",
+    "catchphrase": "mango"
+  },
+  {
+    "id" : 5,
+    "name": "Ruby",
+    "personality": "Peppy",
+    "species": "Rabbit",
+    "birthday": "December 25",
+    "catchphrase": "li'l ears"
+  },
+  {
+    "id" : 6,
+    "name": "Rudy",
+    "personality": "Jock",
+    "species": "Cat",
+    "birthday": "December 20",
+    "catchphrase": "mush"
+  },
+  {
+    "id" : 7,
+    "name": "Sally",
+    "personality": "Normal",
+    "species": "Squirrel",
+    "birthday": "June 19",
+    "catchphrase": "nutmeg"
+  },
+  {
+    "id" : 8,
+    "name": "Samson",
+    "personality": "Jock",
+    "species": "Mouse",
+    "birthday": "July 5",
+    "catchphrase": "pipsqueak"
+  },
+  {
+    "id" : 9,
+    "name": "Savannah",
+    "personality": "Normal",
+    "species": "Horse",
+    "birthday": "January 25",
+    "catchphrase": "y'all"
+  },
+  {
+    "id" : 10,
+    "name": "Scoot",
+    "personality": "Jock",
+    "species": "Duck",
+    "birthday": "June 13",
+    "catchphrase": "zip zoom!"
+  },
+  {
+    "id" : 11,
+    "name": "Sheldon",
+    "personality": "Jock",
+    "species": "Squirrel",
+    "birthday": "February 26",
+    "catchphrase": "cardio"
+  },
+  {
+    "id" : 12,
+    "name": "Shep",
+    "personality": "Smug",
+    "species": "Dog",
+    "birthday": "November 24",
+    "catchphrase": "baaa man"
+  },
+  {
+    "id" : 13,
+    "name": "Simon",
+    "personality": "Lazy",
+    "species": "Monkey",
+    "birthday": "January 19",
+    "catchphrase": "zzzook"
+  },
+  {
+    "id" : 14,
+    "name": "Skye",
+    "personality": "Normal",
+    "species": "Wolf",
+    "birthday": "March 24",
+    "catchphrase": "airmail"
+  },
+  {
+    "id" : 15,
+    "name": "Sly",
+    "personality": "Jock",
+    "species": "Alligator",
+    "birthday": "November 15",
+    "catchphrase": "hoo-rah"
+  },
+  {
+    "id" : 16,
+    "name": "Snake",
+    "personality": "Jock",
+    "species": "Rabbit",
+    "birthday": "November 3",
+    "catchphrase": "bunyip"
+  },
+  {
+    "id" : 17,
+    "name": "Soleil",
+    "personality": "Snooty",
+    "species": "Hamster",
+    "birthday": "August 9",
+    "catchphrase": "tarnation"
+  },
+  {
+    "id" : 18,
+    "name": "Spork",
+    "personality": "Lazy",
+    "species": "Pig",
+    "birthday": "September 3",
+    "catchphrase": "snork"
+  },
+  {
+    "id" : 19,
+    "name": "Sprinkle",
+    "personality": "Peppy",
+    "species": "Penguin",
+    "birthday": "February 20",
+    "catchphrase": "frappe"
+  },
+  {
+    "id" : 20,
+    "name": "Static",
+    "personality": "Cranky",
+    "species": "Squirrel",
+    "birthday": "July 9",
+    "catchphrase": "krzzt"
+  },
+  {
+    "id" : 21,
+    "name": "Sterling",
+    "personality": "Jock",
+    "species": "Eagle",
+    "birthday": "December 11",
+    "catchphrase": "skraaaaw"
+  },
+  {
+    "id" : 22,
+    "name": "Stinky",
+    "personality": "Jock",
+    "species": "Cat",
+    "birthday": "August 17",
+    "catchphrase": "GAHHHH"
+  },
+  {
+    "id" : 23,
+    "name": "Stitches",
+    "personality": "Lazy",
+    "species": "Cub",
+    "birthday": "February 10",
+    "catchphrase": "stuffin'"
+  },
+  {
+    "id" : 24,
+    "name": "Sydney",
+    "personality": "Normal",
+    "species": "Koala",
+    "birthday": "June 21",
+    "catchphrase": "sunshine"
+  },
+  {
+    "id" : 25,
+    "name": "Sylvia",
+    "personality": "Uchi",
+    "species": "Kangaroo",
+    "birthday": "May 3",
+    "catchphrase": "joey"
+  },
+  {
+    "id" : 26,
+    "name": "T-Bone",
+    "personality": "Cranky",
+    "species": "Bull",
+    "birthday": "May 20",
+    "catchphrase": "moocher"
+  },
+  {
+    "id" : 27,
+    "name": "Tabby",
+    "personality": "Peppy",
+    "species": "Cat",
+    "birthday": "August 13",
+    "catchphrase": "me-WOW"
+  },
+  {
+    "id" : 28,
+    "name": "Tammi",
+    "personality": "Peppy",
+    "species": "Monkey",
+    "birthday": "April 1",
+    "catchphrase": "chimpy"
+  },
+  {
+    "id" : 29,
+    "name": "Tangy",
+    "personality": "Peppy",
+    "species": "Cat",
+    "birthday": "June 17",
+    "catchphrase": "reeeeOWR"
+  },
+  {
+    "id" : 30,
+    "name": "Tank",
+    "personality": "Jock",
+    "species": "Rhino",
+    "birthday": "May 6",
+    "catchphrase": "kerPOW"
+  },
+  {
+    "id" : 31,
+    "name": "Teddy",
+    "personality": "Jock",
+    "species": "Bear",
+    "birthday": "September 26",
+    "catchphrase": "grooof"
+  },
+  {
+    "id" : 32,
+    "name": "Tia",
+    "personality": "Normal",
+    "species": "Elephant",
+    "birthday": "November 18",
+    "catchphrase": "teacup"
+  },
+  {
+    "id" : 33,
+    "name": "Tipper",
+    "personality": "Snooty",
+    "species": "Cow",
+    "birthday": "August 25",
+    "catchphrase": "pushy"
+  }
+
+]

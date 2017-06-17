@@ -148,7 +148,7 @@ class GhibliModel {
                     let vehicleClass = data["vehicle_class"] as? String
                     let length = data["length"]! as? String
                 
-                    let vehicleInstance = Vehicle(name: name!, description: description!, vehicleClass:     vehicleClass!, length: length!)
+                    let vehicleInstance = Vehicle(name: name!, description: description!, vehicleClass: vehicleClass!, length: length!)
                 
                     self.vehicles.append(vehicleInstance)
                 
