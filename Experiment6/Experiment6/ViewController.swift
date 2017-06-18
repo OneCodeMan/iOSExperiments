@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     let schopenhauerQuotes = ["Talent hits a target no one else can hit. Genius hits a target no one else can see.", "A man can be himself only so long as he is alone; and if he does not love solitude, he will not love freedom; for it is only when he is alone that he is really free.", "Mostly it is loss which teaches us about the worth of things.", "Every man takes the limits of his own field of vision for the limits of the world.", "We forfeit three-fourths of ourselves in order to be like other people.", "The shortness of life, so often lamented, may be the best thing about it."]
     let existentialistQuotes = ["That which does not kill us makes us stronger.", "One must still have chaos in oneself to be able to give birth to a dancing star.", "When you stare into the abyss the abyss stares back at you.", "Take it moment by moment, and you will find that we are all, as I’ve said before, bugs in amber.", "Try again. Fail again. Fail better.", "There is scarcely any passion without struggle.", "The world is, of course, nothing but our conception of it.", "Man is nothing else but what he makes of himself."]
     
+    @IBOutlet weak var mainView: UIStackView!
+    @IBOutlet weak var mainViewTitle: UILabel!
+    @IBOutlet weak var mainViewTap: UILabel!
+    @IBOutlet weak var quoteLabel: UILabel!
+    
     let pinchGesture = UIPinchGestureRecognizer()
     let swipeRightGesture = UISwipeGestureRecognizer()
     let swipeLeftGesture = UISwipeGestureRecognizer()
@@ -24,6 +29,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view!.backgroundColor = UIColor.CustomColor.White.Snow
         
         pinchGesture.addTarget(self, action: #selector(pinchedScreen))
         self.view!.addGestureRecognizer(pinchGesture)
@@ -67,48 +74,78 @@ class ViewController: UIViewController {
     // Detect pinch
     func pinchedScreen() {
         print("Pinched screen")
+        toggleMain(false)
+        quoteLabel.text = socratesQuotes[randomItem(from: socratesQuotes)]
         self.view!.backgroundColor = UIColor.CustomColor.Gray.Payne
     }
     
     // Detect swipes
     func swipedRight() {
         print("Swiped right")
+        toggleMain(false)
+        quoteLabel.text = stoicQuotes[randomItem(from: stoicQuotes)]
         self.view!.backgroundColor = UIColor.CustomColor.Red.Crayola
     }
     
     func swipedLeft() {
         print("Swiped left")
+        toggleMain(false)
+        quoteLabel.text = nihilistQuotes[randomItem(from: nihilistQuotes)]
         self.view!.backgroundColor = UIColor.CustomColor.Black.Licorice
     }
     
     func swipedUp() {
         print("Swiped up")
+        toggleMain(false)
+        quoteLabel.text = camusQuotes[randomItem(from: camusQuotes)]
         self.view!.backgroundColor = UIColor.CustomColor.Green.WinterGreen
     }
     
     func swipedDown() {
         print("Swiped down")
+        toggleMain(false)
+        quoteLabel.text = sartreQuotes[randomItem(from: sartreQuotes)]
         self.view!.backgroundColor = UIColor.CustomColor.Pink.Queen
     }
     
     // Detect tap
     func tappedScreen() {
         print("Tapped")
+        toggleMain(true)
+        quoteLabel.text = ""
         self.view!.backgroundColor = UIColor.CustomColor.White.Snow
     }
     
     // Detect double tap
     func doubleTappedScreen() {
         print("Double tap!")
+        toggleMain(false)
+        quoteLabel.text = schopenhauerQuotes[randomItem(from: schopenhauerQuotes)]
         self.view!.backgroundColor = UIColor.CustomColor.Violet.Han
     }
     
     // Detect long tap
     func longTappedScreen() {
         print("Long tap")
+        toggleMain(false)
+        quoteLabel.text = existentialistQuotes[randomItem(from: existentialistQuotes)]
         self.view!.backgroundColor = UIColor.CustomColor.Blue.Moonstone
     }
+    
+    func toggleMain(_ visible: Bool) {
+        mainView.isHidden = !visible
+        mainViewTitle.isHidden = !visible
+        mainViewTap.isHidden = !visible
+    }
+    
+    /*
+     MARK: Random number generator
+    */
 
+    func randomItem(from arr: [String]) -> Int {
+        let randomIndex = Int(arc4random_uniform(UInt32(arr.count)))
+        return randomIndex
+    }
 
 }
 

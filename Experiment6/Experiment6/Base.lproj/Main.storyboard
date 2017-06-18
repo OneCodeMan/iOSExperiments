@@ -132,24 +132,50 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pO-fb-FkA">
+                                <rect key="frame" x="10" y="284.5" width="300" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TMt-83-Qsf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TMt-83-Qsf"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XFA-Rx-bMj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1kB-IF-1fi"/>
+                            <constraint firstAttribute="trailing" secondItem="5pO-fb-FkA" secondAttribute="trailing" constant="10" id="5A4-dg-OqF"/>
                             <constraint firstItem="guu-km-rhI" firstAttribute="top" secondItem="XFA-Rx-bMj" secondAttribute="bottom" constant="48" id="PKO-U0-eEr"/>
                             <constraint firstItem="XFA-Rx-bMj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRV-Uh-9Bf"/>
                             <constraint firstItem="guu-km-rhI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UPx-mj-05N"/>
+                            <constraint firstItem="5pO-fb-FkA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Ydm-yk-5hf"/>
                             <constraint firstItem="2N0-Gl-w3b" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="fqf-rl-N4h"/>
+                            <constraint firstItem="5pO-fb-FkA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g7c-Rf-WcJ"/>
+                            <constraint firstItem="5pO-fb-FkA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="hlT-WV-aUG"/>
                             <constraint firstItem="XFA-Rx-bMj" firstAttribute="top" secondItem="2N0-Gl-w3b" secondAttribute="bottom" constant="20" id="lli-JX-Wi7"/>
                             <constraint firstItem="2N0-Gl-w3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rJV-dz-f7l"/>
                             <constraint firstItem="2N0-Gl-w3b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xkw-cC-TOB"/>
+                            <constraint firstItem="5pO-fb-FkA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z0g-tT-Kff"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Ydm-yk-5hf"/>
                                 <exclude reference="xkw-cC-TOB"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="XFA-Rx-bMj" id="WiW-MY-xMz"/>
+                        <outlet property="mainViewTap" destination="guu-km-rhI" id="qzg-Rb-BEI"/>
+                        <outlet property="mainViewTitle" destination="2N0-Gl-w3b" id="bZU-Hh-4yH"/>
+                        <outlet property="quoteLabel" destination="5pO-fb-FkA" id="G3n-Cr-7xW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
