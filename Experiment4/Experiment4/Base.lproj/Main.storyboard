@@ -17,7 +17,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Experiment4" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -146,6 +145,7 @@
                         <segue destination="rGw-jO-xLL" kind="show" identifier="VillagerDetailVC" id="3yk-MR-MBY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
@@ -210,13 +210,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;sidekick&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qr1-X8-DR3">
-                                <rect key="frame" x="147" y="258" width="81" height="19.5"/>
+                                <rect key="frame" x="147.5" y="258" width="81" height="19.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2f-H5-im2">
-                                <rect key="frame" x="113" y="303" width="149" height="95.5"/>
+                                <rect key="frame" x="113.5" y="303" width="149" height="95.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="clW-MN-8i5">
                                         <rect key="frame" x="0.0" y="0.0" width="149" height="20.5"/>
