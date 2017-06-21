@@ -7,6 +7,7 @@ import MobileCoreServices
 
 class ViewController: UITableViewController, SFSafariViewControllerDelegate {
     
+    var links = ["http://classics.mit.edu/Plato/apology.html", "http://classics.mit.edu/Plato/republic.html", "http://classics.mit.edu/Plato/ion.html", "http://classics.mit.edu/Plato/crito.html", "http://classics.mit.edu/Plato/meno.html", "http://classics.mit.edu/Antoninus/meditations.html", "http://classics.mit.edu/Epicurus/menoec.html", "http://classics.mit.edu/Epicurus/princdoc.html", "http://classics.mit.edu/Confucius/analects.html", "http://classics.mit.edu/Confucius/doctmean.html", "http://classics.mit.edu/Confucius/learning.html"]
     var books = [[String]]()
     var bookmarked = [Int]()
 
@@ -25,6 +26,11 @@ class ViewController: UITableViewController, SFSafariViewControllerDelegate {
         books.append(["Confucius - Doctrine of the Mean", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lor"])
         books.append(["Confucius - The Great Learning", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lor"])
         
+        let defaults = UserDefaults.standard
+        if let bookmarkedItems = defaults.object(forKey: "bookmarked") as? [Int] {
+            bookmarked = bookmarkedItems
+        }
+        
         tableView.isEditing = true // ?
         tableView.allowsSelectionDuringEditing = true // ?
         
@@ -39,7 +45,84 @@ class ViewController: UITableViewController, SFSafariViewControllerDelegate {
         let book = books[indexPath.row]
         cell.textLabel?.attributedText = makeAttributedEntry(title: book[0], description: book[1])
         
+        if bookmarked.contains(indexPath.row) {
+            cell.editingAccessoryType = .checkmark
+        } else {
+            cell.editingAccessoryType = .none
+        }
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        displayWork(indexPath.row)
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    // ?
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        if bookmarked.contains(indexPath.row) {
+            return .delete
+        } else {
+            return .insert
+        }
+    }
+    
+    // ?
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .insert {
+            bookmarked.append(indexPath.row)
+            index(item: indexPath.row)
+        } else {
+            if let index = bookmarked.index(of: indexPath.row) {
+                bookmarked.remove(at: index)
+                deindex(item: indexPath.row)
+            }
+        }
+        
+        let defaults = UserDefaults.standard
+        defaults.set(bookmarked, forKey: "bookmarked")
+        
+        tableView.reloadRows(at: [indexPath], with: .none)
+    }
+    
+    // ?
+    func index(item: Int) {
+        let book = books[item]
+        
+        let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
+        
+        attributeSet.title = book[0]
+        attributeSet.contentDescription = book[1]
+        
+        let item = CSSearchableItem(uniqueIdentifier: "\(item)", domainIdentifier: "internet.classics", attributeSet: attributeSet)
+        
+        CSSearchableIndex.default().indexSearchableItems([item]) {
+            error in
+            if let error = error {
+                print("Indexing error \(error.localizedDescription)")
+            } else {
+                print("Indexed")
+            }
+        }
+    }
+    
+    // ?
+    func deindex(item: Int) {
+        CSSearchableIndex.default().deleteSearchableItems(withIdentifiers: ["\(item)"]) { error in
+            if let error = error {
+                print("Deindexing error \(error.localizedDescription)")
+            } else {
+                print("Search item removed")
+            }
+        }
     }
     
     // ?
@@ -55,6 +138,13 @@ class ViewController: UITableViewController, SFSafariViewControllerDelegate {
         
         return titleString
         
+    }
+    
+    func displayWork(_ which: Int) {
+        if let url = URL(string: links[which]) {
+            let vc = SFSafariViewController(url: url, entersReaderIfAvailable: true) // ?
+            present(vc, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
