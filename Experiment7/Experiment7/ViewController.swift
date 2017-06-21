@@ -14,6 +14,8 @@ class ViewController: UITableViewController, SFSafariViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Woke Works"
+        
         books.append(["Plato - Apology", "This book is about Socrates talking to the Athens court during his trial"])
         books.append(["Plato - The Republic", "This book is full of really awesome dialogue between Socrates and other people. Socrates basically questions the heck out of people on various topics and it's just awesome"])
         books.append(["Plato - Ion", "This book is about Socrates talking to a poet named Ion, questioning whether poetry is a skill itself or if poetry is a result of other skills."])
@@ -33,7 +35,6 @@ class ViewController: UITableViewController, SFSafariViewControllerDelegate {
         
         tableView.isEditing = true // ?
         tableView.allowsSelectionDuringEditing = true // ?
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

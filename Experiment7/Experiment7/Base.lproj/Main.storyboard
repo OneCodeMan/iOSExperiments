@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G18a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GBV-d7-2F8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G18a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jzb-9a-hNm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Woke Works-->
         <scene sceneID="LaG-xj-Wie">
             <objects>
-                <tableViewController id="ET0-Uk-XKI" customClass="ViewController" customModule="Experiment7" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Woke Works" id="ET0-Uk-XKI" customClass="ViewController" customModule="Experiment7" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YQs-os-duj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,25 +50,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZ9-iD-tVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.799999999999997" y="158.77061469265368"/>
+            <point key="canvasLocation" x="-404" y="152.47376311844079"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Hq8-L2-BBx">
+        <scene sceneID="nRS-ap-3oA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GBV-d7-2F8" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jzb-9a-hNm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U1R-jg-mj0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FXy-eI-2Xc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ET0-Uk-XKI" kind="relationship" relationship="rootViewController" id="64I-fe-LMV"/>
+                        <segue destination="ET0-Uk-XKI" kind="relationship" relationship="rootViewController" id="1qB-S7-0zu"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUf-bH-0fi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYJ-wj-yZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="152"/>
+            <point key="canvasLocation" x="-1180" y="152"/>
         </scene>
     </scenes>
 </document>
