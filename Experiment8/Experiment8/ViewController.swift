@@ -1,7 +1,3 @@
-/*
- TODO: Fix UI
- */
-
 import UIKit
 import CoreImage
 
@@ -25,7 +21,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         } else {
-            let ac = UIAlertController(title: "Saved!", message: "Your altered image saved to photos", preferredStyle: .alert)
+            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to photos", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         }
@@ -45,7 +41,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Kawaiify"
+        title = "Core Image Practice"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(importPicture))
         context = CIContext()
         currentFilter = CIFilter(name: "CISepiaTone")
@@ -104,7 +100,28 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let picker = UIImagePickerController()
         picker.allowsEditing = true
         picker.delegate = self
-        present(picker, animated: true)
+        
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose Source", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action: UIAlertAction) in
+            
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                picker.sourceType = .camera
+                self.present(picker, animated: true, completion: nil)
+            } else {
+                print("Camera not available")
+            }
+            
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Photo library", style: .default, handler: { (action: UIAlertAction) in
+            picker.sourceType = .photoLibrary
+            self.present(picker, animated: true, completion: nil)
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(actionSheet, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

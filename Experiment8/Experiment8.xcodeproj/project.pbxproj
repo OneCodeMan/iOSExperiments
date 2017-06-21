@@ -314,6 +314,7 @@
 				160A32A01EFA1E90001ECFFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
