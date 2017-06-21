@@ -1,12 +1,3 @@
-/*
- TODO:
- - Let user upload photo from photo library to imageView.image
- - Let user take pic with camera and add to imageView.image
- - Make list of filters
- - Set filter functionality (Big task, sliders and shit)
- - Fix UI
- */
-
 import UIKit
 import CoreImage
 
@@ -14,12 +5,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var intensity: UISlider!
     @IBAction func sliderChanged(_ sender: UISlider) {
         processImage()
     }
     
     @IBAction func filterButton(_ sender: UIButton) {
-        print(sender.titleLabel!.text!)
+        setFilter(to: sender.titleLabel!.text!)
+        
+        processImage()
     }
     
     var currentImage: UIImage!
@@ -45,9 +39,30 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
-    // this is what puts the image on the screen
+    // this is what applies filters to image and puts the image on the screen
     func processImage() {
-        imageView.image = UIImage(cgImage: currentImage.cgImage!)
+        let inputKeys = currentFilter.inputKeys
+        
+        if inputKeys.contains(kCIInputIntensityKey) {
+            currentFilter.setValue(intensity.value, forKey: kCIInputIntensityKey)
+        }
+        
+        if inputKeys.contains(kCIInputRadiusKey) {
+            currentFilter.setValue(intensity.value * 150, forKey: kCIInputRadiusKey)
+        }
+        
+        if inputKeys.contains(kCIInputScaleKey) {
+            currentFilter.setValue(intensity.value * 100, forKey: kCIInputScaleKey)
+        }
+        
+        if inputKeys.contains(kCIInputCenterKey) {
+            currentFilter.setValue(CIVector(x: currentImage.size.width / 2, y: currentImage.size.height / 2), forKey: kCIInputCenterKey)
+        }
+        
+        if let cgimg = context.createCGImage(currentFilter.outputImage!, from: currentFilter.outputImage!.extent) {
+            let processedImage = UIImage(cgImage: cgimg)
+            self.imageView.image = processedImage
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -69,7 +84,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         picker.delegate = self
         present(picker, animated: true)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

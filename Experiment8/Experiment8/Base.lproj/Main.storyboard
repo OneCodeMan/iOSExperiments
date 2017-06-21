@@ -131,6 +131,7 @@
                     <navigationItem key="navigationItem" id="C4k-Ma-gtP"/>
                     <connections>
                         <outlet property="imageView" destination="53W-j7-4hp" id="xRC-FQ-QNM"/>
+                        <outlet property="intensity" destination="uQD-rh-Ej7" id="m1E-sq-LWO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
