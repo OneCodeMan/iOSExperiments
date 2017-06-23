@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G18a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="BradleyHand-Bold.ttf">
+            <string>BradleyHandITCTT-Bold</string>
+        </array>
+        <array key="HoeflerText.ttc">
+            <string>HoeflerText-Regular</string>
+        </array>
         <array key="SnellRoundhand.ttc">
             <string>SnellRoundhand-Bold</string>
         </array>
@@ -23,7 +30,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Shake" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h92-bT-QAA">
@@ -32,18 +39,199 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flavour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-6M-557">
+                                <rect key="frame" x="30" y="183" width="236.5" height="26.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROC-Jr-myT">
+                                <rect key="frame" x="30.5" y="77" width="259.5" height="26.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="CnF-fj-lE2">
+                                <rect key="frame" x="30.5" y="113" width="259.5" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="u8m-je-zNi">
+                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfK-ee-zHW" customClass="BEMCheckBox">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="LeB-Hs-jwB"/>
+                                                    <constraint firstAttribute="height" constant="40" id="TNC-sZ-UmL"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96E-id-SAz">
+                                                <rect key="frame" x="51" y="0.0" width="9.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="dIg-kz-PRo">
+                                        <rect key="frame" x="94.5" y="0.0" width="68.5" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waO-eR-Q5T" customClass="BEMCheckBox">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="O4y-cW-isA"/>
+                                                    <constraint firstAttribute="height" constant="40" id="piw-Kx-8Mm"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16a-CA-Fjx">
+                                                <rect key="frame" x="51" y="0.0" width="17.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="OA6-rX-1Le">
+                                        <rect key="frame" x="197" y="0.0" width="62.5" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="636-MV-UkY" customClass="BEMCheckBox">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="oLk-9C-eBA"/>
+                                                    <constraint firstAttribute="height" constant="40" id="tgj-PY-M09"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2td-dI-55b">
+                                                <rect key="frame" x="51" y="0.0" width="11.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BhL-gT-fcn">
+                                <rect key="frame" x="30.5" y="225" width="236.5" height="92"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-eU-dUv">
+                                        <rect key="frame" x="0.0" y="0.0" width="236.5" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lz6-BR-j0n">
+                                                <rect key="frame" x="0.0" y="0.0" width="236.5" height="40"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-4u-e5U">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="40"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QT0-g2-L2R" customClass="BEMCheckBox">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="M6M-RM-hco"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="OGX-e1-Kq1"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vanilla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BH-9L-AbX">
+                                                                <rect key="frame" x="60" y="0.0" width="40.5" height="40"/>
+                                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hrN-kV-g0f">
+                                                        <rect key="frame" x="120.5" y="0.0" width="116" height="40"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOs-ma-4L6" customClass="BEMCheckBox">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="32b-uz-QGG"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="Ceg-pt-aeA"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chocolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adK-uX-lTn">
+                                                                <rect key="frame" x="55" y="0.0" width="61" height="40"/>
+                                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LCb-8k-Rkz">
+                                        <rect key="frame" x="0.0" y="52" width="125.5" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4V-9L-rpy" customClass="BEMCheckBox">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="F2Z-Tq-qUh"/>
+                                                    <constraint firstAttribute="width" constant="40" id="qva-5N-dT2"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strawberry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-NU-Ydw">
+                                                <rect key="frame" x="60" y="0.0" width="65.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QWS-6M-557" firstAttribute="leading" secondItem="BhL-gT-fcn" secondAttribute="leading" id="4pm-Lp-H4S"/>
+                            <constraint firstItem="BhL-gT-fcn" firstAttribute="top" secondItem="QWS-6M-557" secondAttribute="bottom" constant="15.5" id="8GT-Hu-r9L"/>
+                            <constraint firstItem="CnF-fj-lE2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BNS-hx-B26"/>
+                            <constraint firstItem="BhL-gT-fcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ERb-8w-Kw8"/>
                             <constraint firstAttribute="trailing" secondItem="h92-bT-QAA" secondAttribute="trailing" constant="20" id="IuA-Z9-6UB"/>
+                            <constraint firstItem="CnF-fj-lE2" firstAttribute="leading" secondItem="BhL-gT-fcn" secondAttribute="leading" id="JER-yC-foO"/>
+                            <constraint firstItem="ROC-Jr-myT" firstAttribute="width" secondItem="CnF-fj-lE2" secondAttribute="width" id="Jup-KE-DkA"/>
                             <constraint firstItem="h92-bT-QAA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Y7A-6d-b5Z"/>
+                            <constraint firstItem="ROC-Jr-myT" firstAttribute="top" secondItem="h92-bT-QAA" secondAttribute="bottom" constant="7.5" id="Zbd-ED-SoG"/>
+                            <constraint firstItem="QWS-6M-557" firstAttribute="width" secondItem="BhL-gT-fcn" secondAttribute="width" id="eVe-q8-e6s"/>
+                            <constraint firstItem="ROC-Jr-myT" firstAttribute="leading" secondItem="CnF-fj-lE2" secondAttribute="leading" id="ibU-5q-iQy"/>
                             <constraint firstItem="h92-bT-QAA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="maD-oP-3yq"/>
                             <constraint firstItem="h92-bT-QAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p8m-Bt-E79"/>
+                            <constraint firstItem="QWS-6M-557" firstAttribute="top" secondItem="CnF-fj-lE2" secondAttribute="bottom" constant="30" id="tAJ-ka-x7w"/>
+                            <constraint firstItem="CnF-fj-lE2" firstAttribute="top" secondItem="ROC-Jr-myT" secondAttribute="bottom" constant="9.5" id="wxB-SL-n1x"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ERb-8w-Kw8"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.75" y="138.38028169014083"/>
         </scene>
     </scenes>
 </document>
