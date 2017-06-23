@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         prompts = [knowYourselfQuestions, daringQuestions, vulnerabilityQuestions]
         frontView.backgroundColor = UIColor.black
-        frontViewCategory.text = "Reflections \n Shake for a category \n Tap for prompt"
+        frontViewCategory.text = "Reflections"
         backViewPrompt.text = "Prompts to get to know yourself."
     }
     
@@ -49,6 +49,10 @@ class ViewController: UIViewController {
     */
     func generateRandomIndex(for list: [String]) -> Int {
         return Int(arc4random_uniform(UInt32((list.count-1) + 1)))
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
 }
