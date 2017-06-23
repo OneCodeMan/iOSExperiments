@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flavour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-6M-557">
-                                <rect key="frame" x="30" y="183" width="236.5" height="26.5"/>
+                                <rect key="frame" x="30" y="183" width="250" height="26.5"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -123,13 +123,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BhL-gT-fcn">
-                                <rect key="frame" x="30.5" y="225" width="236.5" height="92"/>
+                                <rect key="frame" x="30.5" y="225" width="250" height="92"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-eU-dUv">
-                                        <rect key="frame" x="0.0" y="0.0" width="236.5" height="40"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-eU-dUv">
+                                        <rect key="frame" x="0.0" y="0.0" width="249.5" height="40"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lz6-BR-j0n">
-                                                <rect key="frame" x="0.0" y="0.0" width="236.5" height="40"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="lz6-BR-j0n">
+                                                <rect key="frame" x="0.0" y="0.0" width="249.5" height="40"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-4u-e5U">
                                                         <rect key="frame" x="0.0" y="0.0" width="100.5" height="40"/>
@@ -154,7 +154,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hrN-kV-g0f">
-                                                        <rect key="frame" x="120.5" y="0.0" width="116" height="40"/>
+                                                        <rect key="frame" x="133.5" y="0.0" width="116" height="40"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOs-ma-4L6" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -202,6 +202,9 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="8Zc-5C-3h3"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
