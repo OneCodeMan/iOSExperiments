@@ -2,7 +2,7 @@
 
 Note: Needs polishing. Trello board.
 
-[![https://gyazo.com/9a322304fc3cd38181ed47dd9f359a01](https://i.gyazo.com/9a322304fc3cd38181ed47dd9f359a01.gif)](https://gyazo.com/9a322304fc3cd38181ed47dd9f359a01)
+[![https://gyazo.com/1cea38f6654ff015fce94d73ba57ede5](https://i.gyazo.com/1cea38f6654ff015fce94d73ba57ede5.gif)](https://gyazo.com/1cea38f6654ff015fce94d73ba57ede5)
 
 ## Practiced with:
 
