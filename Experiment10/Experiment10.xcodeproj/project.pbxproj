@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16C663731EFCB91D00748608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C663721EFCB91D00748608 /* AppDelegate.swift */; };
-		16C663751EFCB91D00748608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C663741EFCB91D00748608 /* ViewController.swift */; };
+		16C663751EFCB91D00748608 /* ChooseShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C663741EFCB91D00748608 /* ChooseShakeViewController.swift */; };
 		16C663781EFCB91D00748608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C663761EFCB91D00748608 /* Main.storyboard */; };
 		16C6637A1EFCB91D00748608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C663791EFCB91D00748608 /* Assets.xcassets */; };
 		16C6637D1EFCB91D00748608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C6637B1EFCB91D00748608 /* LaunchScreen.storyboard */; };
@@ -16,12 +16,13 @@
 		16C6638E1EFCBC2C00748608 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C663881EFCBC2C00748608 /* BEMCheckBox.m */; };
 		16C6638F1EFCBC2C00748608 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6638A1EFCBC2C00748608 /* BEMCheckBoxGroup.m */; };
 		16C663901EFCBC2C00748608 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6638C1EFCBC2C00748608 /* BEMPathManager.m */; };
+		16C663931EFDC9EF00748608 /* OrderedShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C663921EFDC9EF00748608 /* OrderedShakeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16C6636F1EFCB91D00748608 /* Experiment10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Experiment10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C663721EFCB91D00748608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16C663741EFCB91D00748608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16C663741EFCB91D00748608 /* ChooseShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseShakeViewController.swift; sourceTree = "<group>"; };
 		16C663771EFCB91D00748608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16C663791EFCB91D00748608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C6637C1EFCB91D00748608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		16C6638B1EFCBC2C00748608 /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
 		16C6638C1EFCBC2C00748608 /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
 		16C663911EFCBC8100748608 /* CheckMarkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckMarkHeader.h; sourceTree = "<group>"; };
+		16C663921EFDC9EF00748608 /* OrderedShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedShakeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,8 @@
 			children = (
 				16C663841EFCBC2C00748608 /* Classes */,
 				16C663721EFCB91D00748608 /* AppDelegate.swift */,
-				16C663741EFCB91D00748608 /* ViewController.swift */,
+				16C663741EFCB91D00748608 /* ChooseShakeViewController.swift */,
+				16C663921EFDC9EF00748608 /* OrderedShakeViewController.swift */,
 				16C663761EFCB91D00748608 /* Main.storyboard */,
 				16C663791EFCB91D00748608 /* Assets.xcassets */,
 				16C6637B1EFCB91D00748608 /* LaunchScreen.storyboard */,
@@ -166,8 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16C663751EFCB91D00748608 /* ViewController.swift in Sources */,
+				16C663751EFCB91D00748608 /* ChooseShakeViewController.swift in Sources */,
 				16C663901EFCBC2C00748608 /* BEMPathManager.m in Sources */,
+				16C663931EFDC9EF00748608 /* OrderedShakeViewController.swift in Sources */,
 				16C663731EFCB91D00748608 /* AppDelegate.swift in Sources */,
 				16C6638D1EFCBC2C00748608 /* BEMAnimationManager.m in Sources */,
 				16C6638F1EFCBC2C00748608 /* BEMCheckBoxGroup.m in Sources */,
@@ -351,6 +355,7 @@
 				16C663831EFCB91D00748608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

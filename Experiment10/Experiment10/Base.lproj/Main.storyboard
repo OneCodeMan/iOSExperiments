@@ -21,10 +21,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Choose Shake Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Experiment10" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChooseShakeController" customModule="Experiment10" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -39,23 +39,152 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flavour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-6M-557">
-                                <rect key="frame" x="30" y="183" width="250" height="26.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flavour" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-6M-557">
+                                <rect key="frame" x="28" y="183" width="250" height="26.5"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROC-Jr-myT">
-                                <rect key="frame" x="30.5" y="77" width="259.5" height="26.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROC-Jr-myT">
+                                <rect key="frame" x="28" y="77" width="264" height="26.5"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="RrC-bQ-BX5">
+                                <rect key="frame" x="28" y="342" width="264" height="122.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dietary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIu-f6-QZD">
+                                        <rect key="frame" x="0.0" y="0.0" width="264" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="SUu-MD-jB4">
+                                        <rect key="frame" x="0.0" y="30.5" width="264" height="92"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="L30-ww-gbR">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="40"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MQT-k1-Vq6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="40"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1U6-FB-LIq" customClass="BEMCheckBox">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="fPF-M2-cDm"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="qfc-26-BxK"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No carbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRr-wn-Qe1">
+                                                                <rect key="frame" x="60" y="0.0" width="53.5" height="40"/>
+                                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-9h-x9J">
+                                                        <rect key="frame" x="126.5" y="0.0" width="137.5" height="40"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvc-hK-tzh" customClass="BEMCheckBox">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="74g-qm-Tin"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="ICd-le-qaP"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                                        <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                                                        <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvd-3G-iuj">
+                                                                <rect key="frame" x="60" y="0.0" width="77.5" height="40"/>
+                                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="pZn-hr-cLi">
+                                                <rect key="frame" x="0.0" y="52" width="223.5" height="40"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lVO-q4-VCl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="40"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bT0-gZ-24j" customClass="BEMCheckBox">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="PHJ-gX-aRp"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="aBO-cK-xFj"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2p-we-vUD">
+                                                                <rect key="frame" x="60" y="0.0" width="53.5" height="40"/>
+                                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tgs-21-Z1h">
+                                                        <rect key="frame" x="127.5" y="0.0" width="96" height="40"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qM-Pg-enH" customClass="BEMCheckBox">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="RtJ-CH-rGb"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="har-DG-Nam"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                                                        <color key="value" red="0.45882352939999999" green="0.72549019609999998" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                                        <color key="value" red="0.45882352939999999" green="0.72549019609999998" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvU-mN-Mc0">
+                                                                <rect key="frame" x="60" y="0.0" width="36" height="40"/>
+                                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vIu-f6-QZD" firstAttribute="leading" secondItem="SUu-MD-jB4" secondAttribute="leading" id="qzl-Gd-Jfa"/>
+                                    <constraint firstItem="SUu-MD-jB4" firstAttribute="top" secondItem="vIu-f6-QZD" secondAttribute="bottom" constant="15.5" id="y6C-PX-efM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="y6C-PX-efM"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="CnF-fj-lE2">
-                                <rect key="frame" x="30.5" y="113" width="259.5" height="40"/>
+                                <rect key="frame" x="28" y="113" width="264" height="40"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="u8m-je-zNi">
-                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="40"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfK-ee-zHW" customClass="BEMCheckBox">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -64,20 +193,17 @@
                                                     <constraint firstAttribute="width" constant="40" id="LeB-Hs-jwB"/>
                                                     <constraint firstAttribute="height" constant="40" id="TNC-sZ-UmL"/>
                                                 </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96E-id-SAz">
-                                                <rect key="frame" x="51" y="0.0" width="9.5" height="40"/>
-                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                                <rect key="frame" x="51" y="0.0" width="8" height="40"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="dIg-kz-PRo">
-                                        <rect key="frame" x="94.5" y="0.0" width="68.5" height="40"/>
+                                        <rect key="frame" x="93" y="0.0" width="69.5" height="40"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waO-eR-Q5T" customClass="BEMCheckBox">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -86,20 +212,17 @@
                                                     <constraint firstAttribute="width" constant="40" id="O4y-cW-isA"/>
                                                     <constraint firstAttribute="height" constant="40" id="piw-Kx-8Mm"/>
                                                 </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16a-CA-Fjx">
-                                                <rect key="frame" x="51" y="0.0" width="17.5" height="40"/>
-                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                                <rect key="frame" x="51" y="0.0" width="18.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="OA6-rX-1Le">
-                                        <rect key="frame" x="197" y="0.0" width="62.5" height="40"/>
+                                        <rect key="frame" x="196.5" y="0.0" width="67.5" height="40"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="636-MV-UkY" customClass="BEMCheckBox">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -108,13 +231,10 @@
                                                     <constraint firstAttribute="width" constant="40" id="oLk-9C-eBA"/>
                                                     <constraint firstAttribute="height" constant="40" id="tgj-PY-M09"/>
                                                 </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2td-dI-55b">
-                                                <rect key="frame" x="51" y="0.0" width="11.5" height="40"/>
-                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                                <rect key="frame" x="51" y="0.0" width="16.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -123,7 +243,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BhL-gT-fcn">
-                                <rect key="frame" x="30.5" y="225" width="250" height="92"/>
+                                <rect key="frame" x="28" y="225" width="250" height="92"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-eU-dUv">
                                         <rect key="frame" x="0.0" y="0.0" width="249.5" height="40"/>
@@ -142,7 +262,12 @@
                                                                     <constraint firstAttribute="width" constant="40" id="OGX-e1-Kq1"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                                        <color key="value" red="0.58379331849050808" green="0.94959330558776855" blue="0.87626793212269816" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                                                        <color key="value" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vanilla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BH-9L-AbX">
@@ -164,7 +289,13 @@
                                                                     <constraint firstAttribute="width" constant="40" id="Ceg-pt-aeA"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                                        <color key="value" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                                                        <color key="value" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chocolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adK-uX-lTn">
@@ -190,7 +321,13 @@
                                                     <constraint firstAttribute="width" constant="40" id="qva-5N-dT2"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                                        <color key="value" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                                        <color key="value" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strawberry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-NU-Ydw">
@@ -206,9 +343,19 @@
                                     <constraint firstAttribute="width" constant="250" id="8Zc-5C-3h3"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LG-Md-Kev">
+                                <rect key="frame" x="140" y="518" width="40" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Order"/>
+                                <connections>
+                                    <action selector="orderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0SQ-3g-H78"/>
+                                    <segue destination="P2A-Bp-qQv" kind="show" id="8A9-gU-GCh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RrC-bQ-BX5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4B2-eR-ahd"/>
                             <constraint firstItem="QWS-6M-557" firstAttribute="leading" secondItem="BhL-gT-fcn" secondAttribute="leading" id="4pm-Lp-H4S"/>
                             <constraint firstItem="BhL-gT-fcn" firstAttribute="top" secondItem="QWS-6M-557" secondAttribute="bottom" constant="15.5" id="8GT-Hu-r9L"/>
                             <constraint firstItem="CnF-fj-lE2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BNS-hx-B26"/>
@@ -216,6 +363,7 @@
                             <constraint firstAttribute="trailing" secondItem="h92-bT-QAA" secondAttribute="trailing" constant="20" id="IuA-Z9-6UB"/>
                             <constraint firstItem="CnF-fj-lE2" firstAttribute="leading" secondItem="BhL-gT-fcn" secondAttribute="leading" id="JER-yC-foO"/>
                             <constraint firstItem="ROC-Jr-myT" firstAttribute="width" secondItem="CnF-fj-lE2" secondAttribute="width" id="Jup-KE-DkA"/>
+                            <constraint firstItem="9LG-Md-Kev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rp5-xb-rlQ"/>
                             <constraint firstItem="h92-bT-QAA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Y7A-6d-b5Z"/>
                             <constraint firstItem="ROC-Jr-myT" firstAttribute="top" secondItem="h92-bT-QAA" secondAttribute="bottom" constant="7.5" id="Zbd-ED-SoG"/>
                             <constraint firstItem="QWS-6M-557" firstAttribute="width" secondItem="BhL-gT-fcn" secondAttribute="width" id="eVe-q8-e6s"/>
@@ -223,7 +371,9 @@
                             <constraint firstItem="h92-bT-QAA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="maD-oP-3yq"/>
                             <constraint firstItem="h92-bT-QAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p8m-Bt-E79"/>
                             <constraint firstItem="QWS-6M-557" firstAttribute="top" secondItem="CnF-fj-lE2" secondAttribute="bottom" constant="30" id="tAJ-ka-x7w"/>
+                            <constraint firstItem="RrC-bQ-BX5" firstAttribute="top" secondItem="BhL-gT-fcn" secondAttribute="bottom" constant="25" id="uOL-Oo-nw5"/>
                             <constraint firstItem="CnF-fj-lE2" firstAttribute="top" secondItem="ROC-Jr-myT" secondAttribute="bottom" constant="9.5" id="wxB-SL-n1x"/>
+                            <constraint firstItem="9LG-Md-Kev" firstAttribute="top" secondItem="pZn-hr-cLi" secondAttribute="bottom" constant="53.5" id="z9n-9r-7WU"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -231,10 +381,72 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="chocolateFlavourCheckbox" destination="nOs-ma-4L6" id="ChY-SN-t8p"/>
+                        <outlet property="chocolateFlavourLabel" destination="adK-uX-lTn" id="LcA-5B-t81"/>
+                        <outlet property="dietaryCarbsCheckbox" destination="1U6-FB-LIq" id="PZP-vE-Vbv"/>
+                        <outlet property="dietaryCarbsLabel" destination="NRr-wn-Qe1" id="sxJ-Ta-pTL"/>
+                        <outlet property="dietaryProteinCheckbox" destination="gvc-hK-tzh" id="6NV-09-Bxf"/>
+                        <outlet property="dietaryProteinLabel" destination="jvd-3G-iuj" id="VE5-Iz-ELR"/>
+                        <outlet property="dietarySugarCheckbox" destination="bT0-gZ-24j" id="zI8-ex-TT7"/>
+                        <outlet property="dietarySugarLabel" destination="P2p-we-vUD" id="8bO-fv-IEz"/>
+                        <outlet property="dietaryVeganCheckbox" destination="7qM-Pg-enH" id="8gk-qE-pV5"/>
+                        <outlet property="dietaryVeganLabel" destination="mvU-mN-Mc0" id="zGx-58-sMJ"/>
+                        <outlet property="strawberryFlavourCheckbox" destination="K4V-9L-rpy" id="Ep2-BR-gDT"/>
+                        <outlet property="strawberryFlavourLabel" destination="fcq-NU-Ydw" id="tr6-BI-Ggj"/>
+                        <outlet property="vanillaFlavourCheckbox" destination="QT0-g2-L2R" id="G9P-TQ-Mfe"/>
+                        <outlet property="vanillaFlavourLabel" destination="1BH-9L-AbX" id="bAN-59-aCn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.75" y="138.38028169014083"/>
+        </scene>
+        <!--Ordered Shake View Controller-->
+        <scene sceneID="yff-Sn-dPd">
+            <objects>
+                <viewController id="P2A-Bp-qQv" customClass="OrderedShakeViewController" customModule="Experiment10" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KHs-BX-e7e"/>
+                        <viewControllerLayoutGuide type="bottom" id="GTn-Jf-TBc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oPK-6p-Vjb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy Your Free Shake!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMk-cD-lRN">
+                                <rect key="frame" x="36" y="25" width="248" height="30.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You ordered a large vanilla shake. No carbs, no sugar, high in protein, and vegan." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txK-zs-awt">
+                                <rect key="frame" x="60" y="168.5" width="200" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="oj3-Yn-aSv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LMk-cD-lRN" firstAttribute="top" secondItem="KHs-BX-e7e" secondAttribute="bottom" constant="5" id="3KS-uI-V6h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LMk-cD-lRN" secondAttribute="trailing" constant="20" id="HuI-DG-b4L"/>
+                            <constraint firstItem="txK-zs-awt" firstAttribute="centerX" secondItem="oPK-6p-Vjb" secondAttribute="centerX" id="N86-sY-PmM"/>
+                            <constraint firstItem="LMk-cD-lRN" firstAttribute="centerX" secondItem="oPK-6p-Vjb" secondAttribute="centerX" id="Qkq-bE-biM"/>
+                            <constraint firstItem="LMk-cD-lRN" firstAttribute="leading" secondItem="oPK-6p-Vjb" secondAttribute="leadingMargin" constant="20" id="bvR-Nr-sFP"/>
+                            <constraint firstItem="txK-zs-awt" firstAttribute="centerY" secondItem="oPK-6p-Vjb" secondAttribute="centerY" id="rr9-0s-B7H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="orderInformationLabel" destination="txK-zs-awt" id="CZU-h6-QnG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMp-Bu-rju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993.75" y="137.32394366197184"/>
         </scene>
     </scenes>
 </document>
