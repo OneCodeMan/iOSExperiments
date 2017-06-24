@@ -69,7 +69,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MQT-k1-Vq6">
                                                         <rect key="frame" x="0.0" y="0.0" width="113.5" height="40"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1U6-FB-LIq" customClass="BEMCheckBox">
+                                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1U6-FB-LIq" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
@@ -88,7 +88,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6w0-9h-x9J">
                                                         <rect key="frame" x="126.5" y="0.0" width="137.5" height="40"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvc-hK-tzh" customClass="BEMCheckBox">
+                                                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvc-hK-tzh" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
@@ -121,7 +121,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lVO-q4-VCl">
                                                         <rect key="frame" x="0.0" y="0.0" width="113.5" height="40"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bT0-gZ-24j" customClass="BEMCheckBox">
+                                                            <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bT0-gZ-24j" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
@@ -140,7 +140,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tgs-21-Z1h">
                                                         <rect key="frame" x="127.5" y="0.0" width="96" height="40"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qM-Pg-enH" customClass="BEMCheckBox">
+                                                            <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qM-Pg-enH" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
@@ -205,7 +205,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="dIg-kz-PRo">
                                         <rect key="frame" x="93" y="0.0" width="69.5" height="40"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waO-eR-Q5T" customClass="BEMCheckBox">
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waO-eR-Q5T" customClass="BEMCheckBox">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -224,7 +224,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="OA6-rX-1Le">
                                         <rect key="frame" x="196.5" y="0.0" width="67.5" height="40"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="636-MV-UkY" customClass="BEMCheckBox">
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="636-MV-UkY" customClass="BEMCheckBox">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -254,7 +254,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-4u-e5U">
                                                         <rect key="frame" x="0.0" y="0.0" width="100.5" height="40"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QT0-g2-L2R" customClass="BEMCheckBox">
+                                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QT0-g2-L2R" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
@@ -281,7 +281,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hrN-kV-g0f">
                                                         <rect key="frame" x="133.5" y="0.0" width="116" height="40"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOs-ma-4L6" customClass="BEMCheckBox">
+                                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOs-ma-4L6" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
@@ -313,7 +313,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LCb-8k-Rkz">
                                         <rect key="frame" x="0.0" y="52" width="125.5" height="40"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4V-9L-rpy" customClass="BEMCheckBox">
+                                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4V-9L-rpy" customClass="BEMCheckBox">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -382,7 +382,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="chocolateFlavourCheckbox" destination="nOs-ma-4L6" id="ChY-SN-t8p"/>
+                        <outlet property="chocolateFlavourCheckbox" destination="nOs-ma-4L6" id="H6f-sv-bkS"/>
                         <outlet property="chocolateFlavourLabel" destination="adK-uX-lTn" id="LcA-5B-t81"/>
                         <outlet property="dietaryCarbsCheckbox" destination="1U6-FB-LIq" id="PZP-vE-Vbv"/>
                         <outlet property="dietaryCarbsLabel" destination="NRr-wn-Qe1" id="sxJ-Ta-pTL"/>
@@ -392,9 +392,12 @@
                         <outlet property="dietarySugarLabel" destination="P2p-we-vUD" id="8bO-fv-IEz"/>
                         <outlet property="dietaryVeganCheckbox" destination="7qM-Pg-enH" id="8gk-qE-pV5"/>
                         <outlet property="dietaryVeganLabel" destination="mvU-mN-Mc0" id="zGx-58-sMJ"/>
-                        <outlet property="strawberryFlavourCheckbox" destination="K4V-9L-rpy" id="Ep2-BR-gDT"/>
+                        <outlet property="sizeLargeCheckbox" destination="636-MV-UkY" id="IRT-LO-rRM"/>
+                        <outlet property="sizeMediumCheckbox" destination="waO-eR-Q5T" id="7bG-fu-vou"/>
+                        <outlet property="sizeSmallCheckbox" destination="PfK-ee-zHW" id="vHi-9H-sxk"/>
+                        <outlet property="strawberryFlavourCheckbox" destination="K4V-9L-rpy" id="glk-9G-ym0"/>
                         <outlet property="strawberryFlavourLabel" destination="fcq-NU-Ydw" id="tr6-BI-Ggj"/>
-                        <outlet property="vanillaFlavourCheckbox" destination="QT0-g2-L2R" id="G9P-TQ-Mfe"/>
+                        <outlet property="vanillaFlavourCheckbox" destination="QT0-g2-L2R" id="CTr-Aq-dJx"/>
                         <outlet property="vanillaFlavourLabel" destination="1BH-9L-AbX" id="bAN-59-aCn"/>
                     </connections>
                 </viewController>
