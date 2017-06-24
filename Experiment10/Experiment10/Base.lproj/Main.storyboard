@@ -343,10 +343,19 @@
                                     <constraint firstAttribute="width" constant="250" id="8Zc-5C-3h3"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LG-Md-Kev">
-                                <rect key="frame" x="140" y="518" width="40" height="30"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Order"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9LG-Md-Kev">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.45882352939999999" green="0.72549019609999998" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Order">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="30" name="HoeflerText-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="orderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0SQ-3g-H78"/>
                                     <segue destination="P2A-Bp-qQv" kind="show" id="8A9-gU-GCh"/>
@@ -355,6 +364,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="9LG-Md-Kev" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="00X-4N-JEl"/>
                             <constraint firstItem="RrC-bQ-BX5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4B2-eR-ahd"/>
                             <constraint firstItem="QWS-6M-557" firstAttribute="leading" secondItem="BhL-gT-fcn" secondAttribute="leading" id="4pm-Lp-H4S"/>
                             <constraint firstItem="BhL-gT-fcn" firstAttribute="top" secondItem="QWS-6M-557" secondAttribute="bottom" constant="15.5" id="8GT-Hu-r9L"/>
@@ -364,6 +374,8 @@
                             <constraint firstItem="CnF-fj-lE2" firstAttribute="leading" secondItem="BhL-gT-fcn" secondAttribute="leading" id="JER-yC-foO"/>
                             <constraint firstItem="ROC-Jr-myT" firstAttribute="width" secondItem="CnF-fj-lE2" secondAttribute="width" id="Jup-KE-DkA"/>
                             <constraint firstItem="9LG-Md-Kev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rp5-xb-rlQ"/>
+                            <constraint firstAttribute="trailing" secondItem="9LG-Md-Kev" secondAttribute="trailing" id="URg-HA-WJB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9LG-Md-Kev" secondAttribute="bottom" id="Xvx-ed-hYj"/>
                             <constraint firstItem="h92-bT-QAA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Y7A-6d-b5Z"/>
                             <constraint firstItem="ROC-Jr-myT" firstAttribute="top" secondItem="h92-bT-QAA" secondAttribute="bottom" constant="7.5" id="Zbd-ED-SoG"/>
                             <constraint firstItem="QWS-6M-557" firstAttribute="width" secondItem="BhL-gT-fcn" secondAttribute="width" id="eVe-q8-e6s"/>
