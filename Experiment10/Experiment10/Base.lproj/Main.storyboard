@@ -392,6 +392,7 @@
                         <outlet property="dietarySugarLabel" destination="P2p-we-vUD" id="8bO-fv-IEz"/>
                         <outlet property="dietaryVeganCheckbox" destination="7qM-Pg-enH" id="8gk-qE-pV5"/>
                         <outlet property="dietaryVeganLabel" destination="mvU-mN-Mc0" id="zGx-58-sMJ"/>
+                        <outlet property="orderButtonOutlet" destination="9LG-Md-Kev" id="ed0-dB-2mh"/>
                         <outlet property="sizeLargeCheckbox" destination="636-MV-UkY" id="IRT-LO-rRM"/>
                         <outlet property="sizeMediumCheckbox" destination="waO-eR-Q5T" id="7bG-fu-vou"/>
                         <outlet property="sizeSmallCheckbox" destination="PfK-ee-zHW" id="vHi-9H-sxk"/>

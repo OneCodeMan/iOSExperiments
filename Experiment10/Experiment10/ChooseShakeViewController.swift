@@ -30,13 +30,14 @@ class ChooseShakeController: UIViewController, BEMCheckBoxDelegate {
     
     let sizes: [String] = ["small", "medium", "large"]
     let flavours: [String] = ["vanilla", "chocolate", "strawberry"]
-    let dietary: [String] = ["no carbs", "no sugar", "high protein", "vegan"]
+    let dietary: [String] = ["no carbs", "high protein", "no sugar", "vegan"]
+    var selectedDietaryChoices: [String] = []
     
+    @IBOutlet weak var orderButtonOutlet: UIButton!
     @IBAction func orderButton(_ sender: UIButton) {
         
-        var selectedChoices: [String] = []
         for (index, choice) in dietaryCheckBoxes!.enumerated() where choice.on == true {
-            selectedChoices.append(dietary[index])
+            selectedDietaryChoices.append(dietary[index])
         }
         
     }
@@ -64,6 +65,8 @@ class ChooseShakeController: UIViewController, BEMCheckBoxDelegate {
         dietaryProteinCheckbox.boxType = .square
         dietarySugarCheckbox.boxType = .square
         dietaryVeganCheckbox.boxType = .square
+        
+        //orderButtonOutlet.isEnabled = false
     }
     
     func didTap(_ checkBox: BEMCheckBox) {
@@ -76,8 +79,6 @@ class ChooseShakeController: UIViewController, BEMCheckBoxDelegate {
         case 3...5:
             toggleFlavour(of: tag)
             flavourOption = flavours[tag-3]
-        case 6...9:
-           print("Dietary")
         default:
             break
         }
@@ -113,6 +114,19 @@ class ChooseShakeController: UIViewController, BEMCheckBoxDelegate {
     
     override var shouldAutorotate: Bool {
         return false
+    }
+    
+    /*
+     MARK: SEGUE
+    */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let orderedShakeController = segue.destination as! OrderedShakeViewController
+        orderedShakeController.chosenSize = sizeOption ?? "medium"
+        orderedShakeController.chosenFlavour = flavourOption ?? "small"
+        print(selectedDietaryChoices)
+        orderedShakeController.chosenDietary = selectedDietaryChoices
+        
     }
 
 }
