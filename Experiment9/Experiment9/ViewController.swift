@@ -7,10 +7,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var backViewPrompt: UILabel!
     
-    var knowYourselfQuestions = ["knowyourself0", "knowyourself1", "knowyourself2", "knowyourself3", "knowyourself4", "knowyourself5"]
-    var daringQuestions = ["daring0", "daring1", "daring2", "daring3", "daring4", "daring5", "daring6", "daring7"]
-    var vulnerabilityQuestions = ["vulernability0", "vulernability1", "vulernability2", "vulernability3", "vulernability4", "vulernability5", "vulernability6", "vulernability7"]
-    var categories = ["Know Yourself", "Daring", "Vulnerability"]
+    var knowYourselfQuestions = ["knowyourselfknowyourselfknowyourselfknowyourselfknowyourself0", "knowyourselfknowyourselfknowyourselfknowyourselfknowyourself1", "knowyourselfknowyourselfknowyourselfknowyourselfknowyourself2", "knowyourselfknowyourselfknowyourselfknowyourselfknowyourselfknowyourself3", "knowyourselfknowyourselfknowyourselfknowyourselfknowyourself4", "knowyourselfknowyourselfknowyourselfknowyourselfknowyourselfknowyourselfknowyourselfknowyourselfknowyourself5"]
+    var daringQuestions = ["daringdaringdaringdaringdaringdaringdaringdaring0", "daridaringdaringdaringdaringdaringng1", "darindaringdaringlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrindaringg2", "darindaringdalityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinringdaringdaringg3", "dadarvulernabilityvulernabilityingdaringring4", "daridaringdaringdaringdaringdaringdaringdaringdaringng5", "darindaringdarinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringringdaringg6", "daridarilityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinlityingdaringrinngdaringng7"]
+    var vulnerabilityQuestions = ["vulernabilityvulernabilityvulernabilityvulernabilityvulernability0", "vulernavulernabilityvulernabilityvulernabilityvulernabilitybility1", "vulervulernabilererererereritynability2", "vulervulernabilityvulernabilityvulernabilitynability3", "vulernavulernabilityvulernabilityvulernabilityvulernabilerereritybility4", "vulvulernabilityvulernabilityvulernabilityvulernabilityvulernabilityvulernabilityvulernabilityernability5", "vulervulernaerererererererererererererverererererbilitynability6", "vulernabilvulernabilityvulernabilityvulernabilityvulernabilityvulernabilityity7"]
+    var categories = ["Question", "Prompt"]
     var colors = [UIColor.CustomColor.Violet.PastelPurple, UIColor.CustomColor.Red.Crayola, UIColor.CustomColor.Blue.BlueGreen]
     var prompts: [[String]]!
     
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         prompts = [knowYourselfQuestions, daringQuestions, vulnerabilityQuestions]
         frontView.backgroundColor = UIColor.black
         frontViewCategory.text = "Reflections"
-        backViewPrompt.text = "Prompts to get to know yourself."
+        backViewPrompt.text = "Get to know yourself."
     }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {

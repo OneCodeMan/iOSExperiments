@@ -90,7 +90,9 @@ class ChooseShakeController: UIViewController, BEMCheckBoxDelegate {
     */
     func toggleSize(of sizeTag: Int) {
         
-        for box in sizeCheckBoxes! where box.tag != sizeTag {
+        guard let sizeCheckBoxes = sizeCheckBoxes else { return }
+        
+        for box in sizeCheckBoxes where box.tag != sizeTag {
             box.on = false
         }
         
@@ -98,7 +100,9 @@ class ChooseShakeController: UIViewController, BEMCheckBoxDelegate {
     
     func toggleFlavour(of flavourTag: Int) {
         
-        for box in flavourCheckBoxes! where box.tag != flavourTag {
+        guard let flavourCheckBoxes = flavourCheckBoxes else { return }
+        
+        for box in flavourCheckBoxes where box.tag != flavourTag {
             box.on = false
         }
         
