@@ -31,7 +31,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="C8f-QT-Re3">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="C8f-QT-Re3" customClass="ImageCell" customModule="RealmPics" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -49,6 +49,9 @@
                                             <constraint firstItem="unm-nU-pfz" firstAttribute="leading" secondItem="C8f-QT-Re3" secondAttribute="leading" id="Xd2-ZN-woH"/>
                                             <constraint firstAttribute="trailing" secondItem="unm-nU-pfz" secondAttribute="trailing" id="rHO-Yc-tek"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageCell" destination="unm-nU-pfz" id="u92-qz-sR2"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -62,6 +65,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tj0-1N-v4F"/>
+                    <connections>
+                        <outlet property="collectionView" destination="eiE-l0-VtD" id="COh-1G-mUf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
